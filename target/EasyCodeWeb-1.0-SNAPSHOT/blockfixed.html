@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>EasyCode by Blockly</title>
+        <script src="blockly/blockly_compressed.js"></script>
+        <script src="blockly/blocks_compressed.js"></script>
+        <script src="blockly/msg/js/pt-br.js"></script>
+        <style>
+            body {
+                background-color: #fff;
+                font-family: sans-serif;
+                padding-top: 70px;
+                padding-left: 10px;
+            }
+        </style>
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    </head>
+    <body>
+        <div id="index"></div>
+        <div id="blocklyDiv" style="height: 480px; width: 600px;"></div>
+
+    <xml id="toolbox" style="display: none">
+        <block type="controls_if"></block>
+        <block type="logic_compare"></block>
+        <block type="controls_repeat_ext"></block>
+        <block type="math_number">
+            <field name="NUM">123</field>
+        </block>
+        <block type="math_arithmetic"></block>
+        <block type="text"></block>
+        <block type="text_print"></block>
+    </xml>
+
+    <script>
+        var demoWorkspace = Blockly.inject('blocklyDiv',
+                {media: 'blockly/media/',
+                    toolbox: document.getElementById('toolbox')});
+    </script>
+
+    <script type="text/javascript" src="workspaceBlocos.js"></script>
+
+</body>
+</html>

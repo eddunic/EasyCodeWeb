@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" >
+    <link rel="stylesheet" href="register.css" type="text/css">
+
+  <title>Cadastro</title>
+
+</head>
+<body>
+
+ <form action="InsereUsuarioServlet" method="post" class="form-signin">
+    <div class="text-center mb-4">
+      <h1 class="h3 mb-3 font-weight-normal">Cadastre-se</h1>
+    </div>
+
+    <div class="form-label-group">
+      <input type="text" name="nome" class="form-control" placeholder="Nome" required autofocus>
+      <label>Nome de usuário</label>
+    </div>
+
+    <div class="form-label-group">
+      <input type="password" name="senha" class="form-control" placeholder="Senha" required>
+      <label>Senha</label>
+    </div>
+     
+     <div class="form-label-group">
+      <input type="email" name="email" class="form-control" placeholder="Email" required>
+      <label>Email</label>
+    </div>
+
+<!--    <div class="checkbox mb-3">
+      <label>
+        <input type="checkbox"> Lembre-me
+      </label>
+    </div>-->
+    <button class="btn btn-lg btn-primary btn-block" type="submit">Continuar</button>
+    <p class="mt-5 mb-3 text-muted text-center"></p>
+  </form> 
+
+</body>
+</html>

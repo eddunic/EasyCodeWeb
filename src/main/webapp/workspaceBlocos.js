@@ -9,7 +9,10 @@ $(function () {
 });
 
 $(function () {
-    $("#box").draggable();
-}
-);
+    $("#box1").draggable();
+});
+        
+$(function () {
+    $("#box2").draggable();
+});
 
