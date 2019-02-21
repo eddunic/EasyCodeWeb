@@ -1,9 +1,9 @@
-<!DOCTYPE html>
-<!--
+<!--<!DOCTYPE html>
+
 To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
 and open the template in the editor.
--->
+
 <html lang="pt-br">
     <head>
         <title>Cadastro EasyCode</title>
@@ -30,5 +30,50 @@ and open the template in the editor.
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
         <script src="https://use.fontawesome.com/releases/v5.5.0/js/all.js"></script>
+    </body>
+</html>-->
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" >
+        <link rel="stylesheet" href="register.css" type="text/css">
+
+        <title>Login</title>
+
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+
+    </head>
+    <body>
+
+        <div id="index"></div>
+
+        <form action="ConsultaUsuarioServlet" method="post" class="form-signin">
+            <div class="text-center mb-4">
+                <h1 class="h3 mb-3 font-weight-normal">Login</h1>
+            </div>
+
+            <div class="form-label-group">
+                <input type="text" name="nome" class="form-control" placeholder="Nome" required autofocus>
+                <label>Nome de usuário ou email</label>
+            </div>
+
+            <div class="form-label-group">
+                <input type="password" name="senha" class="form-control" placeholder="Senha" required>
+                <label>Senha</label>
+            </div>
+
+            <!--    <div class="checkbox mb-3">
+                  <label>
+                    <input type="checkbox"> Lembre-me
+                  </label>
+                </div>-->
+            <button class="btn btn-lg btn-primary btn-block" type="submit">Continuar</button>
+            <p class="mt-5 mb-3 text-muted text-center"></p>
+        </form> 
+
+        <script type="text/javascript" src="HomePage.js"></script>
     </body>
 </html>
