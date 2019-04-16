@@ -3,11 +3,12 @@
     <head>
         <meta charset="utf-8">
         <meta name="google" value="notranslate">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
         <title>EasyCode by Blockly</title>
         <link rel="stylesheet" href="blockly/demos/code/style.css">
-        <script src="blockly/demos/code/storage.js"></script>
-        <script src="blockly/blockly_compressed.js"></script>
+        <script src="closure-library/closure/goog/storage/storage.js"></script>
+        <script src="blockly/blockly_uncompressed.js"></script>
+        <!--<script src="blockly/blockly_compressed.js"></script>-->
         <script src="blockly/blocks_compressed.js"></script>
         <script src="blockly/javascript_compressed.js"></script>
         <script src="blockly/python_compressed.js"></script>
@@ -15,7 +16,6 @@
         <script src="blockly/lua_compressed.js"></script>
         <script src="blockly/dart_compressed.js"></script>
         <script src="blockly/demos/code/code.js"></script>
-        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 
         <style>
             body {
@@ -23,6 +23,7 @@
                 padding-left: 10px;
             }
         </style>
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     </head>
     <body>
         <div id="index"></div>
