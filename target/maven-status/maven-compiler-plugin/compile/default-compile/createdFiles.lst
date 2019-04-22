@@ -3,4 +3,3 @@ model/Usuario.class
 util/HibernateUtil.class
 servlet/InsereUsuarioServlet.class
 dao/UsuarioDAO.class
-.netbeans_automatic_build
