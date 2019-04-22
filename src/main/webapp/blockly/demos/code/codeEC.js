@@ -261,6 +261,41 @@ function download(text, filename) {
 }
 ;
 
+//document.getElementById('tab_' + clickedName).className = 'tabon';
+// If the XML tab was open, save and render the content.
+function exportFile() {
+    var filename = new String("codigo-fonte");
+    var xml, php, js, lua, dart, py;
+    if (document.getElementById('tab_xml').className == 'tabon') {
+        xml = document.getElementById('content_xml').value;
+        filename += ".xml";
+
+        download(xml, filename);
+    } else if (document.getElementById('tab_javascript').className == 'tabon') {
+        js = document.getElementById('content_javascript').value;
+        filename += ".js";
+
+        download(js, filename);
+    } else if (document.getElementById('tab_python').className == 'tabon') {
+        py = document.getElementById('content_python').value;
+        filename += ".py";
+        prompt(py);
+        download(py, filename);
+    } else if (document.getElementById('tab_php').className == 'tabon') {
+        php = document.getElementById('content_php').value;
+        filename += ".php";
+        download(php, filename);
+    } else if (document.getElementById('tab_lua').className == 'tabon') {
+        lua = document.getElementById('content_lua').value;
+        filename += ".lua";
+        download(lua, filename);
+    } else if (document.getElementById('tab_dart').className == 'tabon') {
+        dart = document.getElementById('content_dart').value;
+        filename += ".dart";
+        download(dart, filename);
+    }
+}
+
 //storage
 Code.tabClick = function (clickedName) {
     // If the XML tab was open, save and render the content.
@@ -283,40 +318,52 @@ Code.tabClick = function (clickedName) {
             Blockly.Xml.domToWorkspace(xmlDom, Code.workspace);
         }
     }
-    //document.getElementById('tab_' + clickedName).className = 'tabon';
-    // If the XML tab was open, save and render the content.
-    document.getElementById("exportFile").addEventListener("click", function (event) {
-        var filename = "codigo-fonte";
-        var textArea;
-        var text;
-        if (clickedName == "xml") {
-            textArea = document.getElementById('content_xml');
-            text = textArea.value;
-            filename += ".xml";
-        } else if (clickedName == "javascript") {
-            textArea = document.getElementById('content_javascript');
-            filename += ".js";
-            text = textArea.value;
-        } else if (clickedName == "python") {
-            textArea = document.getElementById('content_python');
-            filename += ".py";
-            text = textArea.value;
-        } else if (clickedName == "php") {
-            textArea = document.getElementById('content_php');
-            filename += ".php";
-            text = textArea.value;
-        } else if (clickedName == "lua") {
-            textArea = document.getElementById('content_lua');
-            filename += ".lua";
-            text = textArea.value;
-        } else if (clickedName == "dart") {
-            textArea = document.getElementById('content_dart');
-            filename += ".dart";
-            text = textArea.value;
-        }
 
-        download(text, filename);
-    })
+    if (document.getElementById('tab_blocks').className == 'tabon') {
+        Code.workspace.setVisible(false);
+    }
+    // Deselect all tabs and hide all panes.
+    for (var i = 0; i < Code.TABS_.length; i++) {
+        var name = Code.TABS_[i];
+        document.getElementById('tab_' + name).className = 'taboff';
+        document.getElementById('content_' + name).style.visibility = 'hidden';
+    }
+
+    // Select the active tab.
+    Code.selected = clickedName;
+    document.getElementById('tab_' + clickedName).className = 'tabon';
+    // Show the selected pane.
+    document.getElementById('content_' + clickedName).style.visibility =
+            'visible';
+    Code.renderContent();
+    if (clickedName == 'blocks') {
+        Code.workspace.setVisible(true);
+    }
+    Blockly.svgResize(Code.workspace);
+};
+
+Code.tabClick = function (clickedName) {
+    // If the XML tab was open, save and render the content.
+    if (document.getElementById('tab_python').className == 'tabon') {
+        var xmlTextarea = document.getElementById('content_python');
+        var xmlText = xmlTextarea.value;
+        var xmlDom = null;
+        try {
+            xmlDom = Blockly.Xml.textToDom(xmlText);
+        } catch (e) {
+            var q =
+                    window.confirm(MSG['badXml'].replace('%1', e));
+            if (!q) {
+                // Leave the user on the XML tab.
+                return;
+            }
+        }
+        if (xmlDom) {
+            Code.workspace.clear();
+            Blockly.Python.domToWorkspace(pythonDom, Code.workspace);
+        }
+    }
+
     if (document.getElementById('tab_blocks').className == 'tabon') {
         Code.workspace.setVisible(false);
     }

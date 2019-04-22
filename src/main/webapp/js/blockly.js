@@ -4,12 +4,7 @@
  * and open the template in the editor.
  */
 
-
-$(function () {
-    $("#index").load("index.html");
-});
-
-var workspace = Blockly.inject('blocklyDiv',
+/* var workspace = Blockly.inject('blocklyDiv',
         {toolbox: document.getElementById('toolbox')});
 var defaultBlocks = document.getElementById('blocklyDefault');
 Blockly.Xml.domToWorkspace(defaultBlocks, workspace);
@@ -52,3 +47,4 @@ function executeBlockCode() {
 }
 
 document.getElementById('playButton').addEventListener('click', executeBlockCode);
+*/
