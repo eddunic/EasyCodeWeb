@@ -18,7 +18,9 @@ and open the template in the editor.
         <script src="blockly/lua_compressed.js"></script>
         <script src="blockly/dart_compressed.js"></script>
         <script src="blockly/demos/code/codeEC.js"></script>
-        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="js/jquery/jquery-1.12.4.js"></script>
+        <script src="js/jquery/dist/jquery.min.js"></script>
+        <script src="blockly/appengine/storage.js"></script>
         <link rel="stylesheet" href="blockly/demos/code/style.css">
         <link rel="stylesheet" href="css/blockly.css" type="text/css">
     </head>
@@ -58,7 +60,7 @@ var workspace = Blockly.inject('blocklyDiv',
                 <hr class="POps">
             </div>
         </div> -->
-        <table width="100%" height="100%">
+        <table width="100%" height="100%" style="margin-top: 50px;">
             <tr>
                 <td>
                     <div id="index"></div>
@@ -96,10 +98,13 @@ var workspace = Blockly.inject('blocklyDiv',
                                     <img src='blockly/media/1x1.gif' class="trash icon21">
                                 </button>
                                 <button id="linkButton" class="notext" title="...">
-                                    <img src='blockly/media/1x1.gif' class="link icon21">
+                                    <!-- <img src='blockly/media/1x1.gif' class="link icon21"> -->
                                 </button>
                                 <button id="runButton" class="notext primary" title="...">
                                     <img src='blockly/media/1x1.gif' class="run icon21">
+                                </button>
+                                <button id="exportFile" class="notext" title="...">
+                                    <img src='blockly/media/1x1.gif' class="link icon21">
                                 </button>
                             </td>
                         </tr>
