@@ -272,25 +272,25 @@ function exportFile() {
 
         download(xml, filename);
     } else if (document.getElementById('tab_javascript').className == 'tabon') {
-        js = document.getElementById('content_javascript').value;
+        js = document.getElementById('content_javascript').innerText;
         filename += ".js";
 
         download(js, filename);
     } else if (document.getElementById('tab_python').className == 'tabon') {
-        py = document.getElementById('content_python').value;
+        py = document.getElementById('content_python').innerText;
         filename += ".py";
         prompt(py);
         download(py, filename);
     } else if (document.getElementById('tab_php').className == 'tabon') {
-        php = document.getElementById('content_php').value;
+        php = document.getElementById('content_php').innerText;
         filename += ".php";
         download(php, filename);
     } else if (document.getElementById('tab_lua').className == 'tabon') {
-        lua = document.getElementById('content_lua').value;
+        lua = document.getElementById('content_lua').innerText;
         filename += ".lua";
         download(lua, filename);
     } else if (document.getElementById('tab_dart').className == 'tabon') {
-        dart = document.getElementById('content_dart').value;
+        dart = document.getElementById('content_dart').innerText;
         filename += ".dart";
         download(dart, filename);
     }
