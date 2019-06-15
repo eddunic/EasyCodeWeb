@@ -238,7 +238,7 @@ Code.LANG = Code.getLang();
  * List of tab names.
  * @private
  */
-Code.TABS_ = ['blocks', 'javascript', 'php', 'python', 'dart', 'lua', 'xml'];
+Code.TABS_ = ['blocks', 'javascript', 'php', 'python', 'dart', 'lua', 'java', 'xml'];
 
 Code.selected = 'blocks';
 
@@ -265,16 +265,14 @@ function download(text, filename) {
 // If the XML tab was open, save and render the content.
 function exportFile() {
     var filename = new String("codigofonte");
-    var xml, php, js, lua, dart, py;
+    var xml, php, js, lua, dart, py, java;
     if (document.getElementById('tab_xml').className == 'tabon') {
         xml = document.getElementById('content_xml').value;
         filename += ".xml";
-
         download(xml, filename);
     } else if (document.getElementById('tab_javascript').className == 'tabon') {
         js = document.getElementById('content_javascript').innerText;
         filename += ".js";
-
         download(js, filename);
     } else if (document.getElementById('tab_python').className == 'tabon') {
         py = document.getElementById('content_python').innerText;
@@ -292,6 +290,11 @@ function exportFile() {
         dart = document.getElementById('content_dart').innerText;
         filename += ".dart";
         download(dart, filename);
+    }
+    else if (document.getElementById('tab_java').className == 'tabon') {
+        java = document.getElementById('content_java').innerText;
+        filename += ".java";
+        download(java, filename);
     }
 }
 
@@ -413,6 +416,8 @@ Code.renderContent = function () {
         Code.attemptCodeGeneration(Blockly.Dart, 'dart');
     } else if (content.id == 'content_lua') {
         Code.attemptCodeGeneration(Blockly.Lua, 'lua');
+    } else if (content.id == 'content_java') {
+        Code.attemptCodeGeneration(Blockly.Java, 'java');
     }
 };
 
