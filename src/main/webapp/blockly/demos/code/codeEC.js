@@ -238,7 +238,7 @@ Code.LANG = Code.getLang();
  * List of tab names.
  * @private
  */
-Code.TABS_ = ['blocks', 'javascript', 'php', 'python', 'dart', 'lua', 'xml'];
+Code.TABS_ = ['blocks', 'javascript', 'php', 'python', 'dart', 'lua', 'java', 'xml'];
 
 Code.selected = 'blocks';
 
@@ -265,16 +265,14 @@ function download(text, filename) {
 // If the XML tab was open, save and render the content.
 function exportFile() {
     var filename = new String("codigofonte");
-    var xml, php, js, lua, dart, py;
+    var xml, php, js, lua, dart, py, java;
     if (document.getElementById('tab_xml').className == 'tabon') {
         xml = document.getElementById('content_xml').value;
         filename += ".xml";
-
         download(xml, filename);
     } else if (document.getElementById('tab_javascript').className == 'tabon') {
         js = document.getElementById('content_javascript').innerText;
         filename += ".js";
-
         download(js, filename);
     } else if (document.getElementById('tab_python').className == 'tabon') {
         py = document.getElementById('content_python').innerText;
@@ -292,6 +290,11 @@ function exportFile() {
         dart = document.getElementById('content_dart').innerText;
         filename += ".dart";
         download(dart, filename);
+    }
+    else if (document.getElementById('tab_java').className == 'tabon') {
+        java = document.getElementById('content_java').innerText;
+        filename += ".java";
+        download(java, filename);
     }
 }
 
@@ -341,50 +344,50 @@ Code.tabClick = function (clickedName) {
     Blockly.svgResize(Code.workspace);
 };
 
-Code.tabClick = function (clickedName) {
-    // If the XML tab was open, save and render the content.
-    if (document.getElementById('tab_python').className == 'tabon') {
-        var xmlTextarea = document.getElementById('content_python');
-        var xmlText = xmlTextarea.value;
-        var xmlDom = null;
-        try {
-            xmlDom = Blockly.Xml.textToDom(xmlText);
-        } catch (e) {
-            var q =
-                    window.confirm(MSG['badXml'].replace('%1', e));
-            if (!q) {
-                // Leave the user on the XML tab.
-                return;
-            }
-        }
-        if (xmlDom) {
-            Code.workspace.clear();
-            Blockly.Python.domToWorkspace(pythonDom, Code.workspace);
-        }
-    }
-
-    if (document.getElementById('tab_blocks').className == 'tabon') {
-        Code.workspace.setVisible(false);
-    }
-    // Deselect all tabs and hide all panes.
-    for (var i = 0; i < Code.TABS_.length; i++) {
-        var name = Code.TABS_[i];
-        document.getElementById('tab_' + name).className = 'taboff';
-        document.getElementById('content_' + name).style.visibility = 'hidden';
-    }
-
-    // Select the active tab.
-    Code.selected = clickedName;
-    document.getElementById('tab_' + clickedName).className = 'tabon';
-    // Show the selected pane.
-    document.getElementById('content_' + clickedName).style.visibility =
-            'visible';
-    Code.renderContent();
-    if (clickedName == 'blocks') {
-        Code.workspace.setVisible(true);
-    }
-    Blockly.svgResize(Code.workspace);
-};
+//Code.tabClick = function (clickedName) {
+//    // If the XML tab was open, save and render the content.
+//    if (document.getElementById('tab_python').className == 'tabon') {
+//        var xmlTextarea = document.getElementById('content_python');
+//        var xmlText = xmlTextarea.value;
+//        var xmlDom = null;
+//        try {
+//            xmlDom = Blockly.Xml.textToDom(xmlText);
+//        } catch (e) {
+//            var q =
+//                    window.confirm(MSG['badXml'].replace('%1', e));
+//            if (!q) {
+//                // Leave the user on the XML tab.
+//                return;
+//            }
+//        }
+//        if (xmlDom) {
+//            Code.workspace.clear();
+//            Blockly.Python.domToWorkspace(pythonDom, Code.workspace);
+//        }
+//    }
+//
+//    if (document.getElementById('tab_blocks').className == 'tabon') {
+//        Code.workspace.setVisible(false);
+//    }
+//    // Deselect all tabs and hide all panes.
+//    for (var i = 0; i < Code.TABS_.length; i++) {
+//        var name = Code.TABS_[i];
+//        document.getElementById('tab_' + name).className = 'taboff';
+//        document.getElementById('content_' + name).style.visibility = 'hidden';
+//    }
+//
+//    // Select the active tab.
+//    Code.selected = clickedName;
+//    document.getElementById('tab_' + clickedName).className = 'tabon';
+//    // Show the selected pane.
+//    document.getElementById('content_' + clickedName).style.visibility =
+//            'visible';
+//    Code.renderContent();
+//    if (clickedName == 'blocks') {
+//        Code.workspace.setVisible(true);
+//    }
+//    Blockly.svgResize(Code.workspace);
+//};
 
 //daniela
 
@@ -413,6 +416,8 @@ Code.renderContent = function () {
         Code.attemptCodeGeneration(Blockly.Dart, 'dart');
     } else if (content.id == 'content_lua') {
         Code.attemptCodeGeneration(Blockly.Lua, 'lua');
+    } else if (content.id == 'content_java') {
+        Code.attemptCodeGeneration(Blockly.Java, 'java');
     }
 };
 
