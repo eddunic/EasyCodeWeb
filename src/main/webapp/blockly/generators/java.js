@@ -257,13 +257,13 @@ Blockly.Java.getInterfaces = function() {
  * @param {string} name Name of the global to initialize
  * @param {string} val Initializer value for the gloabl
  */
-/**Blockly.Java.setGlobalVar = function(block,name,val) {
+Blockly.Java.setGlobalVar = function(block,name,val) {
   if (Blockly.Variables.getLocalContext(block,name) == null &&
       (typeof this.globals_[name] === 'undefined' ||
         this.globals_[name] === null)) {
     this.globals_[name] = val;
   }
-};**/
+};
 /**
  * Get the Java type of a variable by name
  * @param {string} variable Name of the variable to get the type for
