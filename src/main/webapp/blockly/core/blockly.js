@@ -142,6 +142,20 @@ Blockly.svgSize = function(svg) {
 };
 
 /**
+ * Defines list of variables for various scopes.
+ * @type {Object.<!Array>}
+ */
+Blockly.scopeVariableList = {
+  'Types': ['String','Number','Boolean','Array','Map']
+};
+/**
+ * Defines list of variable type equivalences.
+ * @type {Object.<!Array>}
+ */
+ Blockly.VariableTypeEquivalence = {
+ };
+
+/**
  * Size the workspace when the contents change.  This also updates
  * scrollbars accordingly.
  * @param {!Blockly.WorkspaceSvg} workspace The workspace to resize.

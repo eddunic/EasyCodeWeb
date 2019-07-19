@@ -1,5 +1,4 @@
-model/Usuario_.class
-model/Usuario.class
 util/HibernateUtil.class
-servlet/InsereUsuarioServlet.class
+model/Usuario.class
 dao/UsuarioDAO.class
+servlet/InsereUsuarioServlet.class

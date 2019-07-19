@@ -301,47 +301,47 @@ function exportFile() {
 //storage
 Code.tabClick = function (clickedName) {
 // If the XML tab was open, save and render the content.
-    if (document.getElementById('tab_xml').className == 'tabon') {
-        var xmlTextarea = document.getElementById('content_xml');
-        var xmlText = xmlTextarea.value;
-        var xmlDom = null;
-        try {
-            xmlDom = Blockly.Xml.textToDom(xmlText);
-        } catch (e) {
-            var q =
-                    window.confirm(MSG['badXml'].replace('%1', e));
-            if (!q) {
-                // Leave the user on the XML tab.
-                return;
-            }
-        }
-        if (xmlDom) {
-            Code.workspace.clear();
-            Blockly.Xml.domToWorkspace(xmlDom, Code.workspace);
-        }
+  if (document.getElementById('tab_xml').className == 'tabon') {
+    var xmlTextarea = document.getElementById('content_xml');
+    var xmlText = xmlTextarea.value;
+    var xmlDom = null;
+    try {
+      xmlDom = Blockly.Xml.textToDom(xmlText);
+    } catch (e) {
+      var q =
+          window.confirm(MSG['badXml'].replace('%1', e));
+      if (!q) {
+        // Leave the user on the XML tab.
+        return;
+      }
     }
+    if (xmlDom) {
+      Code.workspace.clear();
+      Blockly.Xml.domToWorkspace(xmlDom, Code.workspace);
+    }
+  }
 
-    if (document.getElementById('tab_blocks').className == 'tabon') {
-        Code.workspace.setVisible(false);
-    }
-    // Deselect all tabs and hide all panes.
-    for (var i = 0; i < Code.TABS_.length; i++) {
-        var name = Code.TABS_[i];
-        document.getElementById('tab_' + name).className = 'taboff';
-        document.getElementById('content_' + name).style.visibility = 'hidden';
-    }
+  if (document.getElementById('tab_blocks').className == 'tabon') {
+    Code.workspace.setVisible(false);
+  }
+  // Deselect all tabs and hide all panes.
+  for (var i = 0; i < Code.TABS_.length; i++) {
+    var name = Code.TABS_[i];
+    document.getElementById('tab_' + name).className = 'taboff';
+    document.getElementById('content_' + name).style.visibility = 'hidden';
+  }
 
-    // Select the active tab.
-    Code.selected = clickedName;
-    document.getElementById('tab_' + clickedName).className = 'tabon';
-    // Show the selected pane.
-    document.getElementById('content_' + clickedName).style.visibility =
-            'visible';
-    Code.renderContent();
-    if (clickedName == 'blocks') {
-        Code.workspace.setVisible(true);
-    }
-    Blockly.svgResize(Code.workspace);
+  // Select the active tab.
+  Code.selected = clickedName;
+  document.getElementById('tab_' + clickedName).className = 'tabon';
+  // Show the selected pane.
+  document.getElementById('content_' + clickedName).style.visibility =
+      'visible';
+  Code.renderContent();
+  if (clickedName == 'blocks') {
+    Code.workspace.setVisible(true);
+  }
+  Blockly.svgResize(Code.workspace);
 };
 
 //Code.tabClick = function (clickedName) {
@@ -671,112 +671,3 @@ document.write('<script src="blockly/demos/code/msg/' + Code.LANG + '.js"></scri
 document.write('<script src="blockly/msg/js/' + Code.LANG + '.js"></script>\n');
 
 window.addEventListener('load', Code.init);
-
-
-/* Codigo passo a passo */
-var outputArea = document.getElementById('output');
-var stepButton = document.getElementById('stepButton');
-var demoWorkspace = document.getElementById('content_blocks');
-var myInterpreter = null;
-
-function initApi(interpreter, scope) {
-    // Add an API function for the alert() block, generated for "text_print" blocks.
-    interpreter.setProperty(scope, 'alert',
-            interpreter.createNativeFunction(function (text) {
-                text = text ? text.toString() : '';
-                outputArea.value += '\n' + text;
-            }));
-
-    // Add an API function for the prompt() block.
-    var wrapper = function (text) {
-        text = text ? text.toString() : '';
-        return interpreter.createPrimitive(prompt(text));
-    };
-    interpreter.setProperty(scope, 'prompt',
-            interpreter.createNativeFunction(wrapper));
-
-    // Add an API function for highlighting blocks.
-    var wrapper = function (id) {
-        id = id ? id.toString() : '';
-        return interpreter.createPrimitive(highlightBlock(id));
-    };
-    interpreter.setProperty(scope, 'highlightBlock',
-            interpreter.createNativeFunction(wrapper));
-}
-
-var highlightPause = false;
-var latestCode = '';
-
-function highlightBlock(id) {
-    demoWorkspace.highlightBlock(id);
-    highlightPause = true;
-}
-
-function resetStepUi(clearOutput) {
-    demoWorkspace.highlightBlock(null);
-    highlightPause = false;
-
-    if (clearOutput) {
-        outputArea.value = 'Program output:\n=================';
-    }
-}
-
-function generateCodeAndLoadIntoInterpreter() {
-    // Generate JavaScript code and parse it.
-    Blockly.JavaScript.STATEMENT_PREFIX = 'highlightBlock(%1);\n';
-    Blockly.JavaScript.addReservedWords('highlightBlock');
-    latestCode = Blockly.JavaScript.workspaceToCode(demoWorkspace);
-    resetStepUi(true);
-}
-
-function stepCode() {
-    if (!myInterpreter) {
-        // First statement of this code.
-        // Clear the program output.
-        resetStepUi(true);
-        myInterpreter = new Interpreter(latestCode, initApi);
-
-        // And then show generated code in an alert.
-        // In a timeout to allow the outputArea.value to reset first.
-        setTimeout(function () {
-            alert('Ready to execute the following code\n' +
-                    '===================================\n' + latestCode);
-            highlightPause = true;
-            stepCode();
-        }, 1);
-        return;
-    }
-    highlightPause = false;
-    do {
-        try {
-            var hasMoreCode = myInterpreter.step();
-        } finally {
-            if (!hasMoreCode) {
-                // Program complete, no more code to execute.
-                outputArea.value += '\n\n<< Program complete >>';
-
-                myInterpreter = null;
-                resetStepUi(false);
-
-                // Cool down, to discourage accidentally restarting the program.
-                stepButton.disabled = 'disabled';
-                setTimeout(function () {
-                    stepButton.disabled = '';
-                }, 2000);
-
-                return;
-            }
-        }
-        // Keep executing until a highlight statement is reached,
-        // or the code completes or errors.
-    } while (hasMoreCode && !highlightPause);
-}
-
-// Load the interpreter now, and upon future changes.
-generateCodeAndLoadIntoInterpreter();
-demoWorkspace.addChangeListener(function (event) {
-    if (!(event instanceof Blockly.Events.Ui)) {
-        // Something changed. Parser needs to be reloaded.
-        generateCodeAndLoadIntoInterpreter();
-    }
-});
