@@ -36,7 +36,7 @@
     <tr>
       <td style="width:50%">
         <textarea id="xml_input">
-<xml>
+<xml id="startBlocks" style="display: none">
   <block type="controls_if" inline="false" x="20" y="20">
     <mutation else="1"></mutation>
     <value name="IF0">
@@ -109,9 +109,9 @@
         return;
       }
       // Create a headless workspace.
-      var demoWorkspace = new Blockly.Workspace();
-      Blockly.Xml.domToWorkspace(xml, demoWorkspace);
-      var code = Blockly.Python.workspaceToCode(demoWorkspace);
+      var workspace = new Blockly.Workspace();
+      Blockly.Xml.domToWorkspace(workspace, xml);
+      var code = Blockly.Python.workspaceToCode(workspace);
       document.getElementById('code_output').value = code;
     }
   </script>

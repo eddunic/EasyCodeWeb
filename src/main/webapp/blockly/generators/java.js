@@ -1,4 +1,4 @@
-/** https://github.com/toebes-extreme/blockly
+/**
  * @license
  * Visual Blocks Language
  *
@@ -119,7 +119,7 @@ Blockly.Java.AppName_ = 'myApp';
 /**
  * Default Name of the application for use by all generated classes
  */
-//Blockly.Java.Package_ = 'demo';
+Blockly.Java.Package_ = 'demo';
 /**
  * Base class (if any) for the generated Java code
  */
@@ -157,7 +157,32 @@ Blockly.Java.targetType_ = null;
 /**
  *
  */
-
+Blockly.Java.fileHeader =
+'/*\n'+
+' * Copyright (c) 2015, <<Your Name>>\n'+
+' * All rights reserved.\n'+
+' *\n'+
+' * Redistribution and use in source and binary forms, with or without\n'+
+' * modification, are permitted provided that the following conditions are met:\n'+
+' *\n'+
+' * * Redistributions of source code must retain the above copyright notice, this\n'+
+' *   list of conditions and the following disclaimer.\n'+
+' * * Redistributions in binary form must reproduce the above copyright notice,\n'+
+' *   this list of conditions and the following disclaimer in the documentation\n'+
+' *   and/or other materials provided with the distribution.\n'+
+' *\n'+
+' * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"\n'+
+' * AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE\n'+
+' * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE\n'+
+' * ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE\n'+
+' * LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR\n'+
+' * CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF\n'+
+' * SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS\n'+
+' * INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN\n'+
+' * CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)\n'+
+' * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE\n'+
+' * POSSIBILITY OF SUCH DAMAGE.\n'+
+' */\n';
 /**
  * Set the application name for generated classes
  * @param {string} name Name for the application for any generated code
@@ -179,12 +204,12 @@ Blockly.Java.getAppName = function() {
  * Set the package for this generated Java code
  * @param {string} package Name of the package this is derived from
  */
-/**Blockly.Java.setPackage = function(javaPackage) {
+Blockly.Java.setPackage = function(javaPackage) {
   if (!javaPackage || javaPackage === '') {
     javaPackage = 'demo';
   }
   this.Package_ = javaPackage;
-}**/
+}
 
 
 Blockly.Java.forceUpdate = function(root) {
@@ -209,9 +234,9 @@ Blockly.Java.forceUpdate = function(root) {
  * Get the package for this generated Java code
  * @return {string} package Name of the package this is derived from
  */
-/**Blockly.Java.getPackage = function() {
+Blockly.Java.getPackage = function() {
   return this.Package_;
-};**/
+};
 /**
  * Set the base class (if any) for the generated Java code
  * @param {string} baseclass Name of a base class this workspace is derived from
@@ -330,6 +355,7 @@ Blockly.Java.setVarClassInline = function(inlineclass) {
   this.INLINEVARCLASS = inlineclass;
 }
 
+
 Blockly.Java.getClasses = function() {
   var code = '';
   for (var name in this.classes_) {
@@ -362,8 +388,8 @@ Blockly.Java.workspaceToCode = function(workspace, parms) {
   // Generate the code first to get all of the required imports calculated.
   this.forceUpdate(workspace);
   var code = this.workspaceToCode_(workspace,parms);
-  var finalcode = /**this.fileHeader +
-                  'package ' + this.getPackage() + ';\n\n' +**/
+  var finalcode = this.fileHeader +
+                  'package ' + this.getPackage() + ';\n\n' +
                   this.getImports() + '\n\n' +
                   'public class ' + this.getAppName();
   var baseClass = this.getBaseclass();

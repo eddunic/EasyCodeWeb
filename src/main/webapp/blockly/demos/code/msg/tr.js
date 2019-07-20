@@ -5,6 +5,7 @@ var MSG = {
   runTooltip: "Çalışma alanında bloklar tarafından tanımlanan programını çalıştırın.",
   badCode: "Program hatası:\n %1",
   timeout: "Maksimum yürütme yinelemeleri aşıldı.",
+  discard: "Tüm %1 blok silinsin mi?",
   trashTooltip: "Bütün blokları at.",
   catLogic: "Mantık",
   catLoops: "Döngüler",

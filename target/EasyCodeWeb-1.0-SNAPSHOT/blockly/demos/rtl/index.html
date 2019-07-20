@@ -23,12 +23,12 @@
   </style>
   <script>
     function init() {
-      var demoWorkspace = Blockly.inject('blocklyDiv',
+      var workspace = Blockly.inject('blocklyDiv',
           {media: '../../media/',
            rtl: true,
            toolbox: document.getElementById('toolbox')});
-      Blockly.Xml.domToWorkspace(document.getElementById('startBlocks'),
-                                 demoWorkspace);
+      Blockly.Xml.domToWorkspace(workspace,
+          document.getElementById('startBlocks'));
       //window.onbeforeunload = function() {
       //  return 'Leaving this page will result in the loss of your work.';
       //};
@@ -42,7 +42,7 @@
   <div id="blocklyDiv"></div>
 
   <xml id="toolbox" style="display: none">
-    <category name="منطق" colour="%{BKY_LOGIC_HUE}">
+    <category name="منطق">
       <block type="controls_if"></block>
       <block type="logic_compare"></block>
       <block type="logic_operation"></block>
@@ -51,7 +51,7 @@
       <block type="logic_null"></block>
       <block type="logic_ternary"></block>
     </category>
-    <category name="الحلقات" colour="%{BKY_LOOPS_HUE}">
+    <category name="الحلقات">
       <block type="controls_repeat_ext">
         <value name="TIMES">
           <block type="math_number">
@@ -80,15 +80,20 @@
       <block type="controls_forEach"></block>
       <block type="controls_flow_statements"></block>
     </category>
-    <category name="رياضيات" colour="%{BKY_MATH_HUE}">
-      <block type="math_number">
-        <field name="NUM">123</field>
-      </block>
+    <category name="رياضيات">
+      <block type="math_number"></block>
       <block type="math_arithmetic"></block>
       <block type="math_single"></block>
       <block type="math_trig"></block>
       <block type="math_constant"></block>
       <block type="math_number_property"></block>
+      <block type="math_change">
+        <value name="DELTA">
+          <block type="math_number">
+            <field name="NUM">1</field>
+          </block>
+        </value>
+      </block>
       <block type="math_round"></block>
       <block type="math_on_list"></block>
       <block type="math_modulo"></block>
@@ -117,9 +122,8 @@
         </value>
       </block>
       <block type="math_random_float"></block>
-      <block type="math_atan2"></block>
     </category>
-    <category name="نص" colour="%{BKY_TEXTS_HUE}">
+    <category name="نص">
       <block type="text"></block>
       <block type="text_join"></block>
       <block type="text_append">
@@ -140,7 +144,7 @@
         </value>
       </block>
     </category>
-    <category name="قوائم" colour="%{BKY_LISTS_HUE}">
+    <category name="قوائم">
       <block type="lists_create_empty"></block>
       <block type="lists_create_with"></block>
       <block type="lists_repeat">
@@ -156,16 +160,13 @@
       <block type="lists_getIndex"></block>
       <block type="lists_setIndex"></block>
     </category>
-    <category name="لون" colour="%{BKY_COLOUR_HUE}">
+    <category name="لون">
       <block type="colour_picker"></block>
       <block type="colour_rgb"></block>
       <block type="colour_blend"></block>
     </category>
-    <sep></sep>
-    <category name="متغيرات" custom="VARIABLE" colour="%{BKY_VARIABLES_HUE}">
-    </category>
-    <category name="إجراءات" custom="PROCEDURE" colour="%{BKY_PROCEDURES_HUE}">
-    </category>
+    <category name="متغيرات" custom="VARIABLE"></category>
+    <category name="إجراءات" custom="PROCEDURE"></category>
   </xml>
 
   <xml id="startBlocks" style="display: none">
