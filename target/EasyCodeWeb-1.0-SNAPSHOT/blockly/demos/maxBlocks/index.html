@@ -24,22 +24,21 @@
   <h1><a href="https://developers.google.com/blockly/">Blockly</a> &gt;
     <a href="../index.html">Demos</a> &gt; Maximum Block Limit</h1>
 
-  <p>This is a demo of Blockly which has been restricted to a maximum of
-  five blocks.</p>
+  <p>This is a demo of Blockly which has been restricted to a maximum of five blocks.</p>
 
   <p><b>You have <span id="capacity"></span> block(s) left.</b></p>
 
   <div id="blocklyDiv" style="height: 480px; width: 600px;"></div>
 
   <xml id="toolbox" style="display: none">
-    <category name="Logic" colour="%{BKY_LOGIC_HUE}">
+    <category name="Logic">
       <block type="controls_if"></block>
       <block type="logic_compare"></block>
       <block type="logic_operation"></block>
       <block type="logic_negate"></block>
       <block type="logic_boolean"></block>
     </category>
-    <category name="Loops" colour="%{BKY_LOOPS_HUE}">
+    <category name="Loops">
       <block type="controls_repeat_ext">
         <value name="TIMES">
           <block type="math_number">
@@ -67,14 +66,12 @@
         </value>
       </block>
     </category>
-    <category name="Math" colour="%{BKY_MATH_HUE}">
-      <block type="math_number">
-        <field name="NUM">123</field>
-      </block>
+    <category name="Math">
+      <block type="math_number"></block>
       <block type="math_arithmetic"></block>
       <block type="math_single"></block>
     </category>
-    <category name="Text" colour="%{BKY_TEXTS_HUE}">
+    <category name="Text">
       <block type="text"></block>
       <block type="text_length"></block>
       <block type="text_print"></block>
@@ -82,18 +79,15 @@
   </xml>
 
   <script>
-    var demoWorkspace = Blockly.inject('blocklyDiv',
+    var workspace = Blockly.inject('blocklyDiv',
         {media: '../../media/',
-         maxBlocks: 5,
-         toolbox: document.getElementById('toolbox')});
+         maxBlocks: 5, toolbox: document.getElementById('toolbox')});
 
-    function onchange(event) {
-      document.getElementById('capacity').textContent =
-          demoWorkspace.remainingCapacity();
+    function onchange() {
+      document.getElementById('capacity').innerHTML = workspace.remainingCapacity();
     }
 
-    demoWorkspace.addChangeListener(onchange);
-    onchange();
+    workspace.addChangeListener(onchange);
   </script>
 
 </body>

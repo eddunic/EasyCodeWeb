@@ -1,3 +1,2 @@
-print("Status: 301")
+print("Status: 302")
 print("Location: /static/demos/index.html")
-print("")

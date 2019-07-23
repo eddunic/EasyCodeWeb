@@ -22,32 +22,35 @@ limitations under the License.
 __author__ = "q.neutron@gmail.com (Quynh Neutron)"
 
 import cgi
-import hashlib
 from random import randint
+from google.appengine.ext import db
 from google.appengine.api import memcache
-from google.appengine.ext import ndb
+import logging
 
+print "Content-Type: text/plain\n"
 
 def keyGen():
   # Generate a random string of length KEY_LEN.
   KEY_LEN = 6
-  CHARS = "abcdefghijkmnopqrstuvwxyz23456789"  # Exclude l, 0, 1.
+  CHARS = "abcdefghijkmnopqrstuvwxyz23456789" # Exclude l, 0, 1.
   max_index = len(CHARS) - 1
   return "".join([CHARS[randint(0, max_index)] for x in range(KEY_LEN)])
 
-class Xml(ndb.Model):
+class Xml(db.Model):
   # A row in the database.
-  xml_hash = ndb.IntegerProperty()
-  xml_content = ndb.TextProperty()
+  xml_hash = db.IntegerProperty()
+  xml_content = db.TextProperty()
 
-def xmlToKey(xml_content):
+forms = cgi.FieldStorage()
+if "xml" in forms:
   # Store XML and return a generated key.
-  xml_hash = long(hashlib.sha1(xml_content).hexdigest(), 16)
-  xml_hash = int(xml_hash % (2 ** 64) - (2 ** 63))
-  lookup_query = Xml.query(Xml.xml_hash == xml_hash)
+  xml_content = forms["xml"].value
+  xml_hash = hash(xml_content)
+  lookup_query = db.Query(Xml)
+  lookup_query.filter("xml_hash =", xml_hash)
   lookup_result = lookup_query.get()
   if lookup_result:
-    xml_key = lookup_result.key.string_id()
+    xml_key = lookup_result.key().name()
   else:
     trials = 0
     result = True
@@ -56,32 +59,27 @@ def xmlToKey(xml_content):
       if trials == 100:
         raise Exception("Sorry, the generator failed to get a key for you.")
       xml_key = keyGen()
-      result = Xml.get_by_id(xml_key)
-    row = Xml(id = xml_key, xml_hash = xml_hash, xml_content = xml_content)
+      result = db.get(db.Key.from_path("Xml", xml_key))
+    xml = db.Text(xml_content, encoding="utf_8")
+    row = Xml(key_name = xml_key, xml_hash = xml_hash, xml_content = xml)
     row.put()
-  return xml_key
+  print xml_key
 
-def keyToXml(key_provided):
+if "key" in forms:
   # Retrieve stored XML based on the provided key.
+  key_provided = forms["key"].value
   # Normalize the string.
   key_provided = key_provided.lower().strip()
   # Check memcache for a quick match.
   xml = memcache.get("XML_" + key_provided)
   if xml is None:
     # Check datastore for a definitive match.
-    result = Xml.get_by_id(key_provided)
+    result = db.get(db.Key.from_path("Xml", key_provided))
     if not result:
       xml = ""
     else:
       xml = result.xml_content
     # Save to memcache for next hit.
-    memcache.add("XML_" + key_provided, xml, 3600)
-  return xml.encode("utf-8")
-
-if __name__ == "__main__":
-  print("Content-Type: text/plain\n")
-  forms = cgi.FieldStorage()
-  if "xml" in forms:
-    print(xmlToKey(forms["xml"].value))
-  if "key" in forms:
-    print(keyToXml(forms["key"].value))
+    if not memcache.add("XML_" + key_provided, xml, 3600):
+      logging.error("Memcache set failed.")
+  print xml.encode("utf-8")

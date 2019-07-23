@@ -5,6 +5,7 @@ var MSG = {
   runTooltip: "",
   badCode: "Chyba programu:\n%1",
   timeout: "Maximum execution iterations exceeded.",
+  discard: "Odstranit všechny bloky %1?",
   trashTooltip: "Zahodit všechny bloky.",
   catLogic: "Logika",
   catLoops: "Smyčky",

@@ -128,11 +128,11 @@ Blockly.Dart['controls_for'] = function(block) {
     code += 'if (' + startVar + ' > ' + endVar + ') {\n';
     code += Blockly.Dart.INDENT + incVar + ' = -' + incVar + ';\n';
     code += '}\n';
-    code += 'for (' + variable0 + ' = ' + startVar + '; ' +
-        incVar + ' >= 0 ? ' +
+    code += 'for (' + variable0 + ' = ' + startVar + ';\n' +
+        '     ' + incVar + ' >= 0 ? ' +
         variable0 + ' <= ' + endVar + ' : ' +
-        variable0 + ' >= ' + endVar + '; ' +
-        variable0 + ' += ' + incVar + ') {\n' +
+        variable0 + ' >= ' + endVar + ';\n' +
+        '     ' + variable0 + ' += ' + incVar + ') {\n' +
         branch + '}\n';
   }
   return code;
@@ -159,5 +159,5 @@ Blockly.Dart['controls_flow_statements'] = function(block) {
     case 'CONTINUE':
       return 'continue;\n';
   }
-  throw Error('Unknown flow statement.');
+  throw 'Unknown flow statement.';
 };

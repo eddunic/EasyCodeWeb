@@ -26,9 +26,11 @@
 
 goog.provide('Blockly.Input');
 
+// TODO(scr): Fix circular dependencies
+// goog.require('Blockly.Block');
 goog.require('Blockly.Connection');
 goog.require('Blockly.FieldLabel');
-
+goog.require('goog.asserts');
 
 /**
  * Class for an input with an optional field.
@@ -40,17 +42,11 @@ goog.require('Blockly.FieldLabel');
  * @constructor
  */
 Blockly.Input = function(type, name, block, connection) {
-  if (type != Blockly.DUMMY_INPUT && !name) {
-    throw Error('Value inputs and statement inputs must have non-empty name.');
-  }
   /** @type {number} */
   this.type = type;
   /** @type {string} */
   this.name = name;
-  /**
-   * @type {!Blockly.Block}
-   * @private
-   */
+  /** @type {!Blockly.Block} */
   this.sourceBlock_ = block;
   /** @type {Blockly.Connection} */
   this.connection = connection;
@@ -72,56 +68,35 @@ Blockly.Input.prototype.align = Blockly.ALIGN_LEFT;
 Blockly.Input.prototype.visible_ = true;
 
 /**
- * Add a field (or label from string), and all prefix and suffix fields, to the
- * end of the input's field row.
+ * Add an item to the end of the input's field row.
  * @param {string|!Blockly.Field} field Something to add as a field.
  * @param {string=} opt_name Language-neutral identifier which may used to find
  *     this field again.  Should be unique to the host block.
  * @return {!Blockly.Input} The input being append to (to allow chaining).
  */
 Blockly.Input.prototype.appendField = function(field, opt_name) {
-  this.insertFieldAt(this.fieldRow.length, field, opt_name);
-  return this;
-};
-
-/**
- * Inserts a field (or label from string), and all prefix and suffix fields, at
- * the location of the input's field row.
- * @param {number} index The index at which to insert field.
- * @param {string|!Blockly.Field} field Something to add as a field.
- * @param {string=} opt_name Language-neutral identifier which may used to find
- *     this field again.  Should be unique to the host block.
- * @return {number} The index following the last inserted field.
- */
-Blockly.Input.prototype.insertFieldAt = function(index, field, opt_name) {
-  if (index < 0 || index > this.fieldRow.length) {
-    throw Error('index ' + index + ' out of bounds.');
-  }
-
   // Empty string, Null or undefined generates no field, unless field is named.
   if (!field && !opt_name) {
-    return index;
+    return this;
   }
   // Generate a FieldLabel when given a plain text field.
-  if (typeof field == 'string') {
+  if (goog.isString(field)) {
     field = new Blockly.FieldLabel(/** @type {string} */ (field));
   }
-  field.setSourceBlock(this.sourceBlock_);
   if (this.sourceBlock_.rendered) {
-    field.init();
+    field.init(this.sourceBlock_);
   }
   field.name = opt_name;
 
   if (field.prefixField) {
     // Add any prefix.
-    index = this.insertFieldAt(index, field.prefixField);
+    this.appendField(field.prefixField);
   }
   // Add the field to the field row.
-  this.fieldRow.splice(index, 0, field);
-  ++index;
+  this.fieldRow.push(field);
   if (field.suffixField) {
     // Add any suffix.
-    index = this.insertFieldAt(index, field.suffixField);
+    this.appendField(field.suffixField);
   }
 
   if (this.sourceBlock_.rendered) {
@@ -129,13 +104,26 @@ Blockly.Input.prototype.insertFieldAt = function(index, field, opt_name) {
     // Adding a field will cause the block to change shape.
     this.sourceBlock_.bumpNeighbours_();
   }
-  return index;
+  return this;
+};
+
+/**
+ * Add an item to the end of the input's field row.
+ * @param {*} field Something to add as a field.
+ * @param {string=} opt_name Language-neutral identifier which may used to find
+ *     this field again.  Should be unique to the host block.
+ * @return {!Blockly.Input} The input being append to (to allow chaining).
+ * @deprecated December 2013
+ */
+Blockly.Input.prototype.appendTitle = function(field, opt_name) {
+  console.warn('Deprecated call to appendTitle, use appendField instead.');
+  return this.appendField(field, opt_name);
 };
 
 /**
  * Remove a field from this input.
  * @param {string} name The name of the field.
- * @throws {Error} if the field is not present.
+ * @throws {goog.asserts.AssertionError} if the field is not present.
  */
 Blockly.Input.prototype.removeField = function(name) {
   for (var i = 0, field; field = this.fieldRow[i]; i++) {
@@ -150,7 +138,7 @@ Blockly.Input.prototype.removeField = function(name) {
       return;
     }
   }
-  throw Error('Field "%s" not found.', name);
+  goog.asserts.fail('Field "%s" not found.', name);
 };
 
 /**
@@ -200,13 +188,14 @@ Blockly.Input.prototype.setVisible = function(visible) {
  * Change a connection's compatibility.
  * @param {string|Array.<string>|null} check Compatible value type or
  *     list of value types.  Null if all types are compatible.
+ * @param {boolean} requireType true if null blocks can't match.
  * @return {!Blockly.Input} The input being modified (to allow chaining).
  */
-Blockly.Input.prototype.setCheck = function(check) {
+Blockly.Input.prototype.setCheck = function(check,requireType) {
   if (!this.connection) {
-    throw Error('This input does not have a connection.');
+    throw 'This input does not have a connection.';
   }
-  this.connection.setCheck(check);
+  this.connection.setCheck(check,requireType);
   return this;
 };
 
@@ -231,8 +220,8 @@ Blockly.Input.prototype.init = function() {
   if (!this.sourceBlock_.workspace.rendered) {
     return;  // Headless blocks don't need fields initialized.
   }
-  for (var i = 0; i < this.fieldRow.length; i++) {
-    this.fieldRow[i].init();
+  for (var x = 0; x < this.fieldRow.length; x++) {
+    this.fieldRow[x].init(this.sourceBlock_);
   }
 };
 
@@ -248,3 +237,4 @@ Blockly.Input.prototype.dispose = function() {
   }
   this.sourceBlock_ = null;
 };
+

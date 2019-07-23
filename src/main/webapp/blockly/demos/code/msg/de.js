@@ -5,6 +5,7 @@ var MSG = {
   runTooltip: "Das Programm ausführen, das von den Bausteinen im Arbeitsbereich definiert ist.",
   badCode: "Programmfehler:\n%1",
   timeout: "Die maximalen Ausführungswiederholungen wurden überschritten.",
+  discard: "Alle %1 Bausteine löschen?",
   trashTooltip: "Alle Bausteine verwerfen.",
   catLogic: "Logik",
   catLoops: "Schleifen",

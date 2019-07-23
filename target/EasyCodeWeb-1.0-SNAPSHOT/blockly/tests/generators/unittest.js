@@ -29,15 +29,25 @@ Blockly.Blocks['unittest_main'] = {
   init: function() {
     this.setColour(65);
     this.appendDummyInput()
-        .appendField('run test suite')
-        .appendField(new Blockly.FieldTextInput(''), 'SUITE_NAME');
+        .appendField('run tests');
     this.appendStatementInput('DO');
     this.setTooltip('Executes the enclosed unit tests,\n' +
                     'then prints a summary.');
   },
-  getDeveloperVars: function() {
+  getVars: function() {
     return ['unittestResults'];
-  }
+  },
+  /**
+   * Return all types of variables referenced by this block.
+   * @return {!Array.<Object>} List of variable names with their types.
+   * @this Blockly.Block
+   */
+  getVarsTypes: function() {
+    var vartypes = {};
+    vartypes['unittestResults'] = ['Array'];
+    return vartypes;
+  },
+
 };
 
 Blockly.Blocks['unittest_assertequals'] = {
@@ -46,18 +56,16 @@ Blockly.Blocks['unittest_assertequals'] = {
     this.setColour(65);
     this.setPreviousStatement(true);
     this.setNextStatement(true);
-    this.appendValueInput('MESSAGE')
-        .appendField('name')
-        .setCheck('String');
+    this.appendDummyInput()
+        .appendField(new Blockly.FieldTextInput('test name'), 'MESSAGE');
     this.appendValueInput('ACTUAL')
         .appendField('actual');
     this.appendValueInput('EXPECTED')
         .appendField('expected');
     this.setTooltip('Tests that "actual == expected".');
   },
-  getDeveloperVars: function() {
-    return ['unittestResults'];
-  }
+  getVars: Blockly.Blocks['unittest_main'].getVars,
+  getVarsTypes: Blockly.Blocks['unittest_main'].getVarsTypes
 };
 
 Blockly.Blocks['unittest_assertvalue'] = {
@@ -66,18 +74,17 @@ Blockly.Blocks['unittest_assertvalue'] = {
     this.setColour(65);
     this.setPreviousStatement(true);
     this.setNextStatement(true);
-    this.appendValueInput('MESSAGE', 'test name')
-        .appendField('name')
-        .setCheck('String');
+    this.appendDummyInput()
+        .appendField(new Blockly.FieldTextInput('test name'), 'MESSAGE');
     this.appendValueInput('ACTUAL')
+        .setCheck('Boolean')
         .appendField('assert')
         .appendField(new Blockly.FieldDropdown(
         [['true', 'TRUE'], ['false', 'FALSE'], ['null', 'NULL']]), 'EXPECTED');
     this.setTooltip('Tests that the value is true, false, or null.');
   },
-  getDeveloperVars: function() {
-    return ['unittestResults'];
-  }
+  getVars: Blockly.Blocks['unittest_main'].getVars,
+  getVarsTypes: Blockly.Blocks['unittest_main'].getVarsTypes
 };
 
 Blockly.Blocks['unittest_fail'] = {
@@ -91,28 +98,6 @@ Blockly.Blocks['unittest_fail'] = {
         .appendField('fail');
     this.setTooltip('Records an error.');
   },
-  getDeveloperVars: function() {
-    return ['unittestResults'];
-  }
-};
-
-Blockly.Blocks['unittest_adjustindex'] = {
-  // Adjusts the indexing based on current setting.
-  init: function() {
-    this.jsonInit({
-      "message0": "adjusted %1",
-      "args0": [
-        {
-          "type": "input_value",
-          "name": "INDEX",
-          "check": "Number"
-        }
-      ],
-      "inputsInline": true,
-      "output": "Number",
-      "colour": 65,
-      "tooltip": "Adjusts the value based on whether generated code is using " +
-          "zero or one based indexing."
-    });
-  }
+  getVars: Blockly.Blocks['unittest_main'].getVars,
+  getVarsTypes: Blockly.Blocks['unittest_main'].getVarsTypes
 };
