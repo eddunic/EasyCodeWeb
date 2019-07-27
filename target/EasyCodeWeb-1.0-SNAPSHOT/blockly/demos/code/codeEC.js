@@ -243,7 +243,7 @@ Code.LANG = Code.getLang();
  * List of tab names.
  * @private
  */
-Code.TABS_ = ['blocks', 'javascript', 'python', 'dart', 'java', 'xml'];
+Code.TABS_ = ['blocks', 'javascript', 'php', 'python', 'dart', 'java', 'xml'];
 
 Code.selected = 'blocks';
 
@@ -314,6 +314,14 @@ Code.renderContent = function () {
         if (typeof prettyPrintOne == 'function') {
             code = content.innerHTML;
             code = prettyPrintOne(code, 'js');
+            content.innerHTML = code;
+        }
+    } else if (content.id == 'content_php') {
+        code = Blockly.PHP.workspaceToCode(Code.workspace);
+        content.textContent = code;
+        if (typeof prettyPrintOne == 'function') {
+            code = content.innerHTML;
+            code = prettyPrintOne(code, 'php');
             content.innerHTML = code;
         }
     } else if (content.id == 'content_python') {
@@ -571,14 +579,14 @@ function exportFile() {
         js = document.getElementById('content_javascript').innerText;
         filename += ".js";
         download(js, filename);
-    } else if (document.getElementById('tab_python').className == 'tabon') {
-        py = document.getElementById('content_python').innerText;
-        filename += ".py";
-        download(py, filename);
     } else if (document.getElementById('tab_php').className == 'tabon') {
         php = document.getElementById('content_php').innerText;
         filename += ".php";
         download(php, filename);
+    } else if (document.getElementById('tab_python').className == 'tabon') {
+        py = document.getElementById('content_python').innerText;
+        filename += ".py";
+        download(py, filename);
     } else if (document.getElementById('tab_lua').className == 'tabon') {
         lua = document.getElementById('content_lua').innerText;
         filename += ".lua";
@@ -587,8 +595,7 @@ function exportFile() {
         dart = document.getElementById('content_dart').innerText;
         filename += ".dart";
         download(dart, filename);
-    }
-    else if (document.getElementById('tab_java').className == 'tabon') {
+    } else if (document.getElementById('tab_java').className == 'tabon') {
         java = document.getElementById('content_java').innerText;
         filename += ".java";
         download(java, filename);
