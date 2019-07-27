@@ -1,0 +1,22 @@
+a[name="mode"], a[name="more"] {
+    border-radius: 90px;
+    padding-top: 10px;
+    background-color:#1C86EE !important;
+    color: white !important;
+    font-size:20px;
+    box-shadow: 0px 0px 12px 2px #90a6f5;
+
+}
+
+.icon{
+    color: white !important;
+    font-size:30px;
+}
+
+a[name="mode"].selected{
+    background-color:#104E8B !important;
+}
+
+.btn{
+    margin-right: 3px;
+}
