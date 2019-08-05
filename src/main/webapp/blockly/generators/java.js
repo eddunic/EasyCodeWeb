@@ -388,8 +388,7 @@ Blockly.Java.workspaceToCode = function(workspace, parms) {
   // Generate the code first to get all of the required imports calculated.
   this.forceUpdate(workspace);
   var code = this.workspaceToCode_(workspace,parms);
-  var finalcode = this.fileHeader +
-                  'package ' + this.getPackage() + ';\n\n' +
+  var finalcode = 'package ' + this.getPackage() + ';\n\n' +
                   this.getImports() + '\n\n' +
                   'public class ' + this.getAppName();
   var baseClass = this.getBaseclass();
