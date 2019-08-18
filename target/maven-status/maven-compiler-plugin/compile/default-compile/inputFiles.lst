@@ -2,3 +2,4 @@
 /home/eddunic/NetBeansProjects/EasyCodeWeb/src/main/java/dao/UsuarioDAO.java
 /home/eddunic/NetBeansProjects/EasyCodeWeb/src/main/java/servlet/InsereUsuarioServlet.java
 /home/eddunic/NetBeansProjects/EasyCodeWeb/src/main/java/util/HibernateUtil.java
+/home/eddunic/NetBeansProjects/EasyCodeWeb/src/main/java/model/Questao.java
