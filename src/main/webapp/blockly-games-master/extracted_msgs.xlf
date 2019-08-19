@@ -1,0 +1,1342 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file original="SoyMsgBundle" datatype="x-soy-msg-bundle" xml:space="preserve" source-language="en">
+    <body>
+      <trans-unit id="74073398998712653" datatype="html">
+        <source>Loops</source>
+        <note priority="1" from="description">category - Blocks related to [https://en.wikipedia.org/wiki/Control_flow#Loops loops].\n{lb}{lb}Identical|Loops{rb}{rb}</note>
+        <note priority="1" from="meaning">Games.catLoops</note>
+      </trans-unit>
+      <trans-unit id="113694686851263020" datatype="html">
+        <source>choir</source>
+        <note priority="1" from="description">Name of musical instrument.\n{lb}{lb}Identical|choir{rb}{rb}</note>
+        <note priority="1" from="meaning">Music.choir</note>
+      </trans-unit>
+      <trans-unit id="129044474462510468" datatype="html">
+        <source>https://en.wikipedia.org/wiki/Bee</source>
+        <note priority="1" from="description">The URL of a page with basic information about bees.</note>
+        <note priority="1" from="meaning">Puzzle.animal3HelpUrl</note>
+      </trans-unit>
+      <trans-unit id="142206489755656102" datatype="html">
+        <source>Make the legs reverse direction half way through the movie.</source>
+        <note priority="1" from="description">Instructions.</note>
+        <note priority="1" from="meaning">Movie.helpText8</note>
+      </trans-unit>
+      <trans-unit id="153560734647047937" datatype="html">
+        <source>Stop the program and reset the level.</source>
+        <note priority="1" from="description">tooltip - Pressing this button restores the player to the start position and enables the user's program to be run again.</note>
+        <note priority="1" from="meaning">Games.resetTooltip</note>
+      </trans-unit>
+      <trans-unit id="156975200040154659" datatype="html">
+        <source>https://en.wikipedia.org/wiki/Duck</source>
+        <note priority="1" from="description">The URL of a page with basic information about ducks.</note>
+        <note priority="1" from="meaning">Puzzle.animal1HelpUrl</note>
+      </trans-unit>
+      <trans-unit id="183634583247013051" datatype="html">
+        <source>The highlighted block is not correct.\nKeep trying.</source>
+        <note priority="1" from="description">A message indicating that a visually distinguished block is incorrect and that the user should try to fix it.\n\nThe use of a new line character is optional.</note>
+        <note priority="1" from="meaning">Puzzle.tryAgain</note>
+      </trans-unit>
+      <trans-unit id="196845303311122428" datatype="html">
+        <source>pen up</source>
+        <note priority="1" from="description">block text - Infinitive or imperative of a verb to lift up a pen so that moving it leaves no mark on the writing surface.</note>
+        <note priority="1" from="meaning">Turtle.penUp</note>
+      </trans-unit>
+      <trans-unit id="200165623200379383" datatype="html">
+        <source>Genetics</source>
+        <note priority="1" from="description">title - Specifies that this is Blockly's '''Genetics''' game.\n{lb}{lb}Identical|Genetics{rb}{rb}</note>
+        <note priority="1" from="meaning">Games.genetics</note>
+      </trans-unit>
+      <trans-unit id="268041291823489535" datatype="html">
+        <source>Movie</source>
+        <note priority="1" from="description">title - Specifies that this is Blockly's '''Movie''' game.\n{lb}{lb}Identical|Movie{rb}{rb}</note>
+        <note priority="1" from="meaning">Games.movie</note>
+      </trans-unit>
+      <trans-unit id="295126337553066153" datatype="html">
+        <source>pen down</source>
+        <note priority="1" from="description">block text - Infinitive or imperative of a verb to lower a raised pen so that moving it leaves a mark on the writing surface.</note>
+        <note priority="1" from="meaning">Turtle.penDown</note>
+      </trans-unit>
+      <trans-unit id="337140251378156137" datatype="html">
+        <source>Games for tomorrow's programmers.</source>
+        <note priority="1" from="description">Brief description of Blockly Games.</note>
+        <note priority="1" from="meaning">Index.subTitle</note>
+      </trans-unit>
+      <trans-unit id="338593141197401350" datatype="html">
+        <source>Help</source>
+        <note priority="1" from="description">button label - Pressing this button shows help information.\n{lb}{lb}Identical|Help{rb}{rb}</note>
+        <note priority="1" from="meaning">Games.help</note>
+      </trans-unit>
+      <trans-unit id="349162749155044421" datatype="html">
+        <source>Display the language documentation.</source>
+        <note priority="1" from="description">Tooltip for the button that opens the language reference documentation.</note>
+        <note priority="1" from="meaning">Pond.docsTooltip</note>
+      </trans-unit>
+      <trans-unit id="373223763275851594" datatype="html">
+        <source>Submit your movie to the gallery.</source>
+        <note priority="1" from="description">tooltip - Pressing this button causes the movie created by the user's program to be submitted to a gallery for other people to see.</note>
+        <note priority="1" from="meaning">Movie.submitTooltip</note>
+      </trans-unit>
+      <trans-unit id="393337436178288384" datatype="html">
+        <source>A 'function' allows you to group blocks together, then run them more than once.</source>
+        <note priority="1" from="description">Introducing a new block: function or subroutines</note>
+        <note priority="1" from="meaning">Music.helpText2a</note>
+      </trans-unit>
+      <trans-unit id="456260871761620526" datatype="html">
+        <source>https://en.wikipedia.org/wiki/Printing</source>
+        <note priority="1" from="description">{lb}{lb}Optional{rb}{rb} URL - Information about printing or typography.</note>
+        <note priority="1" from="meaning">Turtle.printHelpUrl</note>
+      </trans-unit>
+      <trans-unit id="468604284020186650" datatype="html">
+        <source>circle</source>
+        <note priority="1" from="description">Command to draw a circle.\n{lb}{lb}Identical|Circle{rb}{rb}</note>
+        <note priority="1" from="meaning">Movie.circleDraw</note>
+      </trans-unit>
+      <trans-unit id="501075344940371814" datatype="html">
+        <source>Bee</source>
+        <note priority="1" from="description">Bee: The insect.\n{lb}{lb}Identical|Bee{rb}{rb}</note>
+        <note priority="1" from="meaning">Puzzle.animal3</note>
+      </trans-unit>
+      <trans-unit id="515568367940150060" datatype="html">
+        <source>Functions</source>
+        <note priority="1" from="description">category - Blocks related to [https://en.wikipedia.org/wiki/Subroutine defining or using procedures/functions].\n{lb}{lb}Identical|Functions{rb}{rb}</note>
+        <note priority="1" from="meaning">Games.catProcedures</note>
+      </trans-unit>
+      <trans-unit id="552526916301133670" datatype="html">
+        <source>Moves the turtle forward or backward by the specified amount.</source>
+        <note priority="1" from="description">tooltip - In this and subsequent messages, 'turtle' refers to a stylized turtle on the screen to represent a position and direction.  This imaginary turtle is carrying a pen in its tail, so moving the turtle draws a line (or curve, etc.).  You are encouraged to play with the [https://blockly-demo.appspot.com/static/apps/turtle/index.html Turtle application] before doing this translation.</note>
+        <note priority="1" from="meaning">Turtle.moveTooltip</note>
+      </trans-unit>
+      <trans-unit id="561418461570337551" datatype="html">
+        <source>You have %2 blocks left.</source>
+        <note priority="1" from="description">warning - Only %2 more blocks may be used, where %2 is an integer greater than 1.\n\nSee also:\n* {lb}{lb}msg-blockly|Maze.capacity1{rb}{rb}</note>
+        <note priority="1" from="meaning">Maze.capacity2</note>
+      </trans-unit>
+      <trans-unit id="638263655992198695" datatype="html">
+        <source>Give the person a couple of hands.</source>
+        <note priority="1" from="description">Instructions.  Drawing hands on a picture of a person.</note>
+        <note priority="1" from="meaning">Movie.helpText6</note>
+      </trans-unit>
+      <trans-unit id="699246884300242965" datatype="html">
+        <source>heading</source>
+        <note priority="1" from="description">block text - the compass direction toward which a traveler or vehicle is or should be moving; course.\n{lb}{lb}Identical|Heading{rb}{rb}</note>
+        <note priority="1" from="meaning">Bird.heading</note>
+      </trans-unit>
+      <trans-unit id="742817462675794226" datatype="html">
+        <source>Blocks</source>
+        <note priority="1" from="description">Label on a tab that contains blocks editor.\n{lb}{lb}Identical|Block{rb}{rb}</note>
+        <note priority="1" from="meaning">Games.blocks</note>
+      </trans-unit>
+      <trans-unit id="843223484015115436" datatype="html">
+        <source>Bird</source>
+        <note priority="1" from="description">title - Specifies that this is Blockly's '''Bird''' game.\n{lb}{lb}Identical|Bird{rb}{rb}</note>
+        <note priority="1" from="meaning">Games.bird</note>
+      </trans-unit>
+      <trans-unit id="921047160155494346" datatype="html">
+        <source>first part</source>
+        <note priority="1" from="description">Example name of a function that plays the first part of some music.</note>
+        <note priority="1" from="meaning">Music.firstPart</note>
+      </trans-unit>
+      <trans-unit id="942598524992550069" datatype="html">
+        <source>Open the gallery of music.</source>
+        <note priority="1" from="description">tooltip - Pressing this button opens a gallery of music made by other users.</note>
+        <note priority="1" from="meaning">Music.galleryTooltip</note>
+      </trans-unit>
+      <trans-unit id="945126989426193972" datatype="html">
+        <source>Lifts or lowers the pen, to stop or start drawing.</source>
+        <note priority="1" from="description">tooltip - Lifting the pen off the writing surface prevents anything from being drawn.  Lowering it (after it has been lifted) enables it to draw again.</note>
+        <note priority="1" from="meaning">Turtle.penTooltip</note>
+      </trans-unit>
+      <trans-unit id="996888288099530156" datatype="html">
+        <source>Submit to Gallery</source>
+        <note priority="1" from="description">Label on a button that submits the user's art to a public gallery.</note>
+        <note priority="1" from="meaning">Turtle.submitMsg</note>
+      </trans-unit>
+      <trans-unit id="1013045213595604872" datatype="html">
+        <source>move forward by</source>
+        <note priority="1" from="description">[[Translating:Blockly#Drop-Down_Menus dropdown]] - Infinitive or imperative of a verb telling a turtle to move (walk) in the direction he/she is facing.  This is followed by a number indicating how far (how many pixels) to go.  Prefer a translation that has text in common with the translation of 'move backward'.  See [[Translating:Blockly#Drop-Down_Menus]].</note>
+        <note priority="1" from="meaning">Turtle.moveForward</note>
+      </trans-unit>
+      <trans-unit id="1038502666716911829" datatype="html">
+        <source>Logic</source>
+        <note priority="1" from="description">category - Blocks related to [https://github.com/google/blockly/wiki/Logic logic].\n{lb}{lb}Identical|Logic{rb}{rb}</note>
+        <note priority="1" from="meaning">Games.catLogic</note>
+      </trans-unit>
+      <trans-unit id="1068587970027116228" datatype="html">
+        <source>Switches to the specified instrument when playing subsequent musical notes.</source>
+        <note priority="1" from="description">tooltip</note>
+        <note priority="1" from="meaning">Music.setInstrumentTooltip</note>
+      </trans-unit>
+      <trans-unit id="1124966775678993568" datatype="html">
+        <source>Reset</source>
+        <note priority="1" from="description">button label - Pressing this button causes the output of the program to be erased but does not delete the user's program).\n{lb}{lb}Identical|Reset{rb}{rb}</note>
+        <note priority="1" from="meaning">Games.resetProgram</note>
+      </trans-unit>
+      <trans-unit id="1135115693149481071" datatype="html">
+        <source>Your solution works, but you can do better.</source>
+        <note priority="1" from="description">Dialog telling user to seek a better answer.</note>
+        <note priority="1" from="meaning">Turtle.helpUseLoop</note>
+      </trans-unit>
+      <trans-unit id="1141690494791308245" datatype="html">
+        <source>height</source>
+        <note priority="1" from="description">Label for a rectangle's height input.\n{lb}{lb}Identical|Height{rb}{rb}</note>
+        <note priority="1" from="meaning">Movie.height</note>
+      </trans-unit>
+      <trans-unit id="1146327621590900127" datatype="html">
+        <source>hide turtle</source>
+        <note priority="1" from="description">block text - Infinitive or imperative of a verb telling a turtle to hide itself (become invisible).</note>
+        <note priority="1" from="meaning">Turtle.hideTurtle</note>
+      </trans-unit>
+      <trans-unit id="1164155135523387658" datatype="html">
+        <source>Create a second function for the next part of 'Frère Jacques'. The last note is longer.</source>
+        <note priority="1" from="description">Instructions.</note>
+        <note priority="1" from="meaning">Music.helpText3</note>
+      </trans-unit>
+      <trans-unit id="1175153079065714801" datatype="html">
+        <source>Create a third function for the next part of 'Frère Jacques'. The first four notes are shorter.<x id="START_BREAK"/><x id="START_IMAGE"/></source>
+        <note priority="1" from="description">Instructions.</note>
+        <note priority="1" from="meaning">Music.helpText4</note>
+      </trans-unit>
+      <trans-unit id="1189440630481795561" datatype="html">
+        <source>Submit your drawing to the gallery.</source>
+        <note priority="1" from="description">tooltip - Pressing this button causes the drawing created by the user's program to be submitted to a gallery for other people to see.</note>
+        <note priority="1" from="meaning">Turtle.submitTooltip</note>
+      </trans-unit>
+      <trans-unit id="1190064103412776740" datatype="html">
+        <source>Repeat the enclosed actions until finish point is reached.</source>
+        <note priority="1" from="description">tooltip - Repeat the enclosed commands until the maze has been successfully completed (the end point reached).</note>
+        <note priority="1" from="meaning">Maze.whileTooltip</note>
+      </trans-unit>
+      <trans-unit id="1206893752796437601" datatype="html">
+        <source>radius</source>
+        <note priority="1" from="description">Label for a circle's radius input.\n{lb}{lb}Identical|Radius{rb}{rb}</note>
+        <note priority="1" from="meaning">Movie.radius</note>
+      </trans-unit>
+      <trans-unit id="1240208832476690288" datatype="html">
+        <source>Clear data</source>
+        <note priority="1" from="description">Text on button for deleting all the user's data.\n{lb}{lb}Identical|Clear data{rb}{rb}</note>
+        <note priority="1" from="meaning">Index.clearData</note>
+      </trans-unit>
+      <trans-unit id="1259247335901030726" datatype="html">
+        <source>Change the heading angle to make the bird get the worm and land in her nest.</source>
+        <note priority="1" from="description">callout - This is shown as instruction for the first level.</note>
+        <note priority="1" from="meaning">Bird.helpHeading</note>
+      </trans-unit>
+      <trans-unit id="1287666504184153147" datatype="html">
+        <source>Once you start editing JavaScript, you can't go back to editing blocks. Is this OK?</source>
+        <note priority="1" from="description">Warning dialog. Options are 'OK' and 'Cancel'.</note>
+        <note priority="1" from="meaning">Games.breakLink</note>
+      </trans-unit>
+      <trans-unit id="1289975531431370979" datatype="html">
+        <source>Turtle</source>
+        <note priority="1" from="description">title - Specifies that this is Blockly's '''Turtle''' game.\n{lb}{lb}Identical|Turtle{rb}{rb}</note>
+        <note priority="1" from="meaning">Games.turtle</note>
+      </trans-unit>
+      <trans-unit id="1359456544648181295" datatype="html">
+        <source>Changes the width of the pen.</source>
+        <note priority="1" from="description">tooltip</note>
+        <note priority="1" from="meaning">Turtle.widthTooltip</note>
+      </trans-unit>
+      <trans-unit id="1364178431368067261" datatype="html">
+        <source>Target</source>
+        <note priority="1" from="description">Name for a player that does nothing.\n{lb}{lb}Identical|Target{rb}{rb}</note>
+        <note priority="1" from="meaning">Pond.targetName</note>
+      </trans-unit>
+      <trans-unit id="1456515588173174520" datatype="html">
+        <source>Click on %1 in the 'if' block to change its condition.</source>
+        <note priority="1" from="description">callout - %1 will be replaced with an image of the dropdown menu that the user needs to click.</note>
+        <note priority="1" from="meaning">Maze.helpMenu</note>
+      </trans-unit>
+      <trans-unit id="1474725060640077068" datatype="html">
+        <source>traits:</source>
+        <note priority="1" from="description">Prompt for a couple of traits of an animal (e.g. Duck: feathers, beak).\n{lb}{lb}Identical|Trait{rb}{rb}</note>
+        <note priority="1" from="meaning">Puzzle.traits</note>
+      </trans-unit>
+      <trans-unit id="1530115130327733098" datatype="html">
+        <source>Your solution works, but you can do better.  Use functions to reduce the amount of repeated code.</source>
+        <note priority="1" from="description">Dialog telling user to seek a better answer.</note>
+        <note priority="1" from="meaning">Music.helpUseFunctions</note>
+      </trans-unit>
+      <trans-unit id="1554687224871598336" datatype="html">
+        <source>Are you ready for the next challenge?</source>
+        <note priority="1" from="description">alert - This is displayed when the user solves the most difficult level and is going to go to the next game.</note>
+        <note priority="1" from="meaning">Games.finalLevel</note>
+      </trans-unit>
+      <trans-unit id="1637937744230846397" datatype="html">
+        <source>As the movie plays, the value of the 'time' block counts from 0 to 100. Since you want the 'y' position of the arm to start at 0 and go to 100 this should be easy.</source>
+        <note priority="1" from="description">Instructions.  Do not translate the word 'time' or the name 'y'.</note>
+        <note priority="1" from="meaning">Movie.helpText2b</note>
+      </trans-unit>
+      <trans-unit id="1659902989275631885" datatype="html">
+        <source>Fur</source>
+        <note priority="1" from="description">Fur: A trait that cats have.\n{lb}{lb}Identical|Fur{rb}{rb}</note>
+        <note priority="1" from="meaning">Puzzle.animal2Trait2</note>
+      </trans-unit>
+      <trans-unit id="1670227216063075975" datatype="html">
+        <source>Maze</source>
+        <note priority="1" from="description">title - Specifies that this is Blockly's '''Maze''' game.\n{lb}{lb}Identical|Maze{rb}{rb}</note>
+        <note priority="1" from="meaning">Games.maze</note>
+      </trans-unit>
+      <trans-unit id="1673297256341690673" datatype="html">
+        <source>play %1 note %2</source>
+        <note priority="1" from="description">Plays one musical note.  %1 is duration of the note (whole, quarter, ...), %2 is the pitch of the note (A, B, C, ...).</note>
+        <note priority="1" from="meaning">Music.playNote</note>
+      </trans-unit>
+      <trans-unit id="1710248589233118468" datatype="html">
+        <source>Player</source>
+        <note priority="1" from="description">Generic name for the player of this video game.\n{lb}{lb}Identical|Player{rb}{rb}</note>
+        <note priority="1" from="meaning">Pond.playerName</note>
+      </trans-unit>
+      <trans-unit id="1737656799955544465" datatype="html">
+        <source>You solved this level with %1 lines of JavaScript:</source>
+        <note priority="1" from="description">alert - Displayed when a level is complete.  %1 is an integer greater than 1.</note>
+        <note priority="1" from="meaning">Games.linesOfCode2</note>
+      </trans-unit>
+      <trans-unit id="1750183075968997387" datatype="html">
+        <source>Duck</source>
+        <note priority="1" from="description">Duck: The bird.\n{lb}{lb}Identical|Duck{rb}{rb}</note>
+        <note priority="1" from="meaning">Puzzle.animal1</note>
+      </trans-unit>
+      <trans-unit id="1766725995274107609" datatype="html">
+        <source>banjo</source>
+        <note priority="1" from="description">Name of musical instrument.\n{lb}{lb}Identical|banjo{rb}{rb}</note>
+        <note priority="1" from="meaning">Music.banjo</note>
+      </trans-unit>
+      <trans-unit id="1786380721957392184" datatype="html">
+        <source>Instead of one star, can you draw four stars arranged in a square?</source>
+        <note priority="1" from="description">Instructions.</note>
+        <note priority="1" from="meaning">Turtle.helpText5</note>
+      </trans-unit>
+      <trans-unit id="1791699700782054375" datatype="html">
+        <source>Move in the direction of the given angle: 0 is to the right, 90 is straight up, etc.</source>
+        <note priority="1" from="description">tooltip - Move in the direction of the given angle, where 0 means going horizontally to the right, and 90 straight up and 270 straight down.</note>
+        <note priority="1" from="meaning">Bird.headingTooltip</note>
+      </trans-unit>
+      <trans-unit id="1794249676769577229" datatype="html">
+        <source>You have %0 blocks left.</source>
+        <note priority="1" from="description">warning - No more blocks may be added until some are removed.  Please include '%0' in the translated string.  It will be replaced with '0' and made bold.</note>
+        <note priority="1" from="meaning">Maze.capacity0</note>
+      </trans-unit>
+      <trans-unit id="1826461500437475319" datatype="html">
+        <source>Slime</source>
+        <note priority="1" from="description">Slime: A trait that snails have.\n{lb}{lb}Identical|Slime{rb}{rb}</note>
+        <note priority="1" from="meaning">Puzzle.animal4Trait2</note>
+      </trans-unit>
+      <trans-unit id="1848865137386959725" datatype="html">
+        <source>Choose a category to see the blocks.</source>
+        <note priority="1" from="description">Instructions for accessing blocks that are hidden inside categories.</note>
+        <note priority="1" from="meaning">Turtle.helpToolbox</note>
+      </trans-unit>
+      <trans-unit id="1875380317327296159" datatype="html">
+        <source>Cancel</source>
+        <note priority="1" from="description">button label - Pressing this button cancels a proposed action.\n{lb}{lb}Identical|Cancel{rb}{rb}</note>
+        <note priority="1" from="meaning">Games.dialogCancel</note>
+      </trans-unit>
+      <trans-unit id="1972926420229186759" datatype="html">
+        <source>list</source>
+        <note priority="1" from="description">variable name - Default [https://github.com/google/blockly/wiki/Variables variable] representing a [https://github.com/google/blockly/wiki/Lists list].  This should be a single word, preferably short.\n{lb}{lb}Identical|List{rb}{rb}</note>
+        <note priority="1" from="meaning">Games.listVariable</note>
+      </trans-unit>
+      <trans-unit id="2030330442273381724" datatype="html">
+        <source>Congratulations!</source>
+        <note priority="1" from="description">alert - This is displayed when the user solves the level.\n{lb}{lb}Identical|Congratulation{rb}{rb}</note>
+        <note priority="1" from="meaning">Games.congratulations</note>
+      </trans-unit>
+      <trans-unit id="2031348347259929659" datatype="html">
+        <source>Sniper</source>
+        <note priority="1" from="description">Name for a player that hides in a corner and shoots.\n{lb}{lb}Identical|Sniper{rb}{rb}</note>
+        <note priority="1" from="meaning">Pond.sniperName</note>
+      </trans-unit>
+      <trans-unit id="2038735006600750451" datatype="html">
+        <source>Math</source>
+        <note priority="1" from="description">category - Blocks related to mathematics.\n{lb}{lb}Identical|Math{rb}{rb}</note>
+        <note priority="1" from="meaning">Games.catMath</note>
+      </trans-unit>
+      <trans-unit id="2075728723517768097" datatype="html">
+        <source>Makes the player do what the blocks say.</source>
+        <note priority="1" from="description">tooltip - Pressing this button runs the computer program the user has written to move the player through the maze.</note>
+        <note priority="1" from="meaning">Maze.runTooltip</note>
+      </trans-unit>
+      <trans-unit id="2149839397262503913" datatype="html">
+        <source>if path to the left</source>
+        <note priority="1" from="description">[[Translating:Blockly#Drop-Down_Menus dropdown]] - Condensed form of 'if there is a path to the left', as in: 'if path to the left, turn left'.</note>
+        <note priority="1" from="meaning">Maze.pathLeft</note>
+      </trans-unit>
+      <trans-unit id="2160384363932764252" datatype="html">
+        <source>Open the gallery of drawings.</source>
+        <note priority="1" from="description">tooltip - Pressing this button opens a gallery of drawings made by other users.</note>
+        <note priority="1" from="meaning">Turtle.galleryTooltip</note>
+      </trans-unit>
+      <trans-unit id="2178896211989818875" datatype="html">
+        <source>Your movie doesn't move. Use blocks to make something interesting. Then you may submit your movie to the gallery.</source>
+        <note priority="1" from="description">Error message.</note>
+        <note priority="1" from="meaning">Movie.submitDisabled</note>
+      </trans-unit>
+      <trans-unit id="2201212763190410627" datatype="html">
+        <source>Changes the colour of the pen.</source>
+        <note priority="1" from="description">tooltip - Changes the colour of ink in the pen carried by the turtle.</note>
+        <note priority="1" from="meaning">Turtle.colourTooltip</note>
+      </trans-unit>
+      <trans-unit id="2235058884220483095" datatype="html">
+        <source>Draws a rectangle at the specified location and with the specified width and height.</source>
+        <note priority="1" from="description">tooltip</note>
+        <note priority="1" from="meaning">Movie.rectTooltip</note>
+      </trans-unit>
+      <trans-unit id="2262369954338079412" datatype="html">
+        <source>Draws a circle at the specified location and with the specified radius.</source>
+        <note priority="1" from="description">tooltip</note>
+        <note priority="1" from="meaning">Movie.circleTooltip</note>
+      </trans-unit>
+      <trans-unit id="2267198105126910529" datatype="html">
+        <source>Plays one musical note of the specified duration and pitch.</source>
+        <note priority="1" from="description">tooltip</note>
+        <note priority="1" from="meaning">Music.playNoteTooltip</note>
+      </trans-unit>
+      <trans-unit id="2289273381578581418" datatype="html">
+        <source>Can you add a black circle so that the moon becomes a crescent?</source>
+        <note priority="1" from="description">Instructions.</note>
+        <note priority="1" from="meaning">Turtle.helpText9</note>
+      </trans-unit>
+      <trans-unit id="2302415315348704045" datatype="html">
+        <source>line</source>
+        <note priority="1" from="description">Command to draw a rectangle.\n{lb}{lb}Identical|Line{rb}{rb}</note>
+        <note priority="1" from="meaning">Movie.lineDraw</note>
+      </trans-unit>
+      <trans-unit id="2308673857579238421" datatype="html">
+        <source>Draws a line from one point to another with the specified width.</source>
+        <note priority="1" from="description">tooltip</note>
+        <note priority="1" from="meaning">Movie.lineTooltip</note>
+      </trans-unit>
+      <trans-unit id="2342117203836410245" datatype="html">
+        <source>start y</source>
+        <note priority="1" from="description">Label for the y-coordinate of the start of a line</note>
+        <note priority="1" from="meaning">Movie.y1</note>
+      </trans-unit>
+      <trans-unit id="2352028843622499350" datatype="html">
+        <source>Waits for the specified duration.</source>
+        <note priority="1" from="description">tooltip</note>
+        <note priority="1" from="meaning">Music.restTooltip</note>
+      </trans-unit>
+      <trans-unit id="2353453760676853811" datatype="html">
+        <source>Perfect!\nAll %1 blocks are correct.</source>
+        <note priority="1" from="description">A congratulatory message displayed if the user placed all of the blocks correctly.\n\nParameters:\n* %1 - number of blocks correctly placed.  It is always an integer greater than 1.\n\nThe use of a new line character is optional.</note>
+        <note priority="1" from="meaning">Puzzle.error0</note>
+      </trans-unit>
+      <trans-unit id="2409415650297366191" datatype="html">
+        <source>font size</source>
+        <note priority="1" from="description">block text - This precedes a number specifying the size of the typographic font that should be used when displaying text.  This appears in the same block as 'font', so that word should not be repeated.\n{lb}{lb}Identical|Font size{rb}{rb}</note>
+        <note priority="1" from="meaning">Turtle.fontSize</note>
+      </trans-unit>
+      <trans-unit id="2422825993066691483" datatype="html">
+        <source>Change your program to draw a pentagon instead of a square.</source>
+        <note priority="1" from="description">Instructions.</note>
+        <note priority="1" from="meaning">Turtle.helpText2</note>
+      </trans-unit>
+      <trans-unit id="2458068685618493528" datatype="html">
+        <source>set colour to</source>
+        <note priority="1" from="description">block text - Infinitive or imperative of a verb to specify the colour of the lines that should be drawn in the future by an imaginary pen.  This is followed by a block showing the colour</note>
+        <note priority="1" from="meaning">Movie.setColour</note>
+      </trans-unit>
+      <trans-unit id="2555132265974908158" datatype="html">
+        <source>bold</source>
+        <note priority="1" from="description">[[Translating:Blockly#Drop-Down_Menus dropdown]] - Specifies that a typographic font should be [https://en.wikipedia.org/wiki/Emphasis_(typography) bold].</note>
+        <note priority="1" from="meaning">Turtle.fontBold</note>
+      </trans-unit>
+      <trans-unit id="2690010781849380215" datatype="html">
+        <source>See Gallery</source>
+        <note priority="1" from="description">Label on a button that opens a gallery of music made by other users.</note>
+        <note priority="1" from="meaning">Music.galleryMsg</note>
+      </trans-unit>
+      <trans-unit id="2691309882763584514" datatype="html">
+        <source>choose...</source>
+        <note priority="1" from="description">Initial text displayed in a dropdown menu from which the user should choose an option.\n{lb}{lb}Identical|Choose{rb}{rb}</note>
+        <note priority="1" from="meaning">Puzzle.legsChoose</note>
+      </trans-unit>
+      <trans-unit id="2743360900788758506" datatype="html">
+        <source>Compose the first four notes of 'Frère Jacques'.</source>
+        <note priority="1" from="description">Instructions.  If your country has a song to the tune of 'Frère Jacques' use its name.  E.g. Bruder Jakob (German) or Kìa con bướm (Vietnamese).</note>
+        <note priority="1" from="meaning">Music.helpText1</note>
+      </trans-unit>
+      <trans-unit id="2801052495540198573" datatype="html">
+        <source>turn right</source>
+        <note priority="1" from="description">[[Translating:Blockly#Drop-Down_Menus dropdown]] - Imperative or infinitive of a verb for a person turning his head and body one quarter rotation clockwise.  Prefer a translation that has text in common with the translation of 'turn left'.  See [[Translating:Blockly#Drop-Down_Menus]].</note>
+        <note priority="1" from="meaning">Maze.turnRight</note>
+      </trans-unit>
+      <trans-unit id="2802666658606485719" datatype="html">
+        <source>This target needs to be hit many times. Use a 'while (true)' loop to do something indefinitely.</source>
+        <note priority="1" from="description">Instructions.  Do not translate 'while (true)'.</note>
+        <note priority="1" from="meaning">Pond.helpText2</note>
+      </trans-unit>
+      <trans-unit id="2827102143774531943" datatype="html">
+        <source>Check Answers</source>
+        <note priority="1" from="description">A label on a button the user can press to check his/her answers.</note>
+        <note priority="1" from="meaning">Puzzle.checkAnswers</note>
+      </trans-unit>
+      <trans-unit id="2885216356485784737" datatype="html">
+        <source>Play your tune with a violin.</source>
+        <note priority="1" from="description">Instructions.</note>
+        <note priority="1" from="meaning">Music.helpText6b</note>
+      </trans-unit>
+      <trans-unit id="2926653827494661093" datatype="html">
+        <source>Move the background circle to the top of your program.  Then it will appear behind the person.</source>
+        <note priority="1" from="description">Dialog telling user to change the order of their program.</note>
+        <note priority="1" from="meaning">Movie.helpLayer</note>
+      </trans-unit>
+      <trans-unit id="2998105539596494275" datatype="html">
+        <source>Returns the current speed of the player (0 is stopped, 100 is full speed).</source>
+        <note priority="1" from="description">Tooltip for the block that reports the player's speed.</note>
+        <note priority="1" from="meaning">Pond.speedTooltip</note>
+      </trans-unit>
+      <trans-unit id="3160118472257830313" datatype="html">
+        <source>normal</source>
+        <note priority="1" from="description">[[Translating:Blockly#Drop-Down_Menus dropdown]] - Specifies that a typographic font should be normal (neither in italics or bold).</note>
+        <note priority="1" from="meaning">Turtle.fontNormal</note>
+      </trans-unit>
+      <trans-unit id="3190825933229819894" datatype="html">
+        <source>Put the player back at the start of the maze.</source>
+        <note priority="1" from="description">tooltip - Pressing this button restores the player to the start position and enables the user's program to be run again.</note>
+        <note priority="1" from="meaning">Maze.resetTooltip</note>
+      </trans-unit>
+      <trans-unit id="3197033602024452368" datatype="html">
+        <source>Use the 'cannon' command to hit the target. The first parameter is the angle, the second parameter is the range. Find the right combination.</source>
+        <note priority="1" from="description">Instructions. Do not translate the word 'cannon'.</note>
+        <note priority="1" from="meaning">Pond.helpText1</note>
+      </trans-unit>
+      <trans-unit id="3200986365618126821" datatype="html">
+        <source>Use the "See Gallery" button to see what other people have drawn. If you draw something interesting, use the "Submit to Gallery" button to publish it.</source>
+        <note priority="1" from="description">Instructions on publishing your drawing.</note>
+        <note priority="1" from="meaning">Turtle.helpText10Reddit</note>
+      </trans-unit>
+      <trans-unit id="3259640535054867497" datatype="html">
+        <source>https://en.wikipedia.org/wiki/Snail</source>
+        <note priority="1" from="description">The URL of a page with basic information about snails.</note>
+        <note priority="1" from="meaning">Puzzle.animal4HelpUrl</note>
+      </trans-unit>
+      <trans-unit id="3293197141663117591" datatype="html">
+        <source>if path ahead</source>
+        <note priority="1" from="description">[[Translating:Blockly#Drop-Down_Menus dropdown]] - Condensed form of 'if there is a path ahead', as in: 'if path ahead, go forward'.  Prefer translation that has text in common with 'if path to the left' and 'if path to the right'.</note>
+        <note priority="1" from="meaning">Maze.pathAhead</note>
+      </trans-unit>
+      <trans-unit id="3294282184296643568" datatype="html">
+        <source>Each start block should play 'Frère Jacques' twice.</source>
+        <note priority="1" from="description">Instructions.</note>
+        <note priority="1" from="meaning">Music.helpText8</note>
+      </trans-unit>
+      <trans-unit id="3295870457274347011" datatype="html">
+        <source>The 'time' block counts from 0 to 100. But now you want the 'y' position of the other arm to start at 100 and go to 0. Can you figure out a simple mathematical formula that flips the direction?</source>
+        <note priority="1" from="description">Instructions.  Do not translate the word 'time' or the name 'y'.</note>
+        <note priority="1" from="meaning">Movie.helpText3</note>
+      </trans-unit>
+      <trans-unit id="3298954388095553165" datatype="html">
+        <source>The 'and' block is true only if both its inputs are true.</source>
+        <note priority="1" from="description">callout - This is shown to introduce the user to the logical 'and' block.\n\nMake sure to translate consistently with:\n* {lb}{lb}msg-blockly|LOGIC OPERATION AND{rb}{rb}</note>
+        <note priority="1" from="meaning">Bird.helpAnd</note>
+      </trans-unit>
+      <trans-unit id="3387788241869183183" datatype="html">
+        <source>Rabbit</source>
+        <note priority="1" from="description">Name for a player that runs like a rabbit.\n{lb}{lb}Identical|Rabbit{rb}{rb}</note>
+        <note priority="1" from="meaning">Pond.rabbitName</note>
+      </trans-unit>
+      <trans-unit id="3390292667307015294" datatype="html">
+        <source>Create four start blocks that each play 'Frère Jacques' twice. Add the correct number of delay blocks.</source>
+        <note priority="1" from="description">Instructions.</note>
+        <note priority="1" from="meaning">Music.helpText9</note>
+      </trans-unit>
+      <trans-unit id="3406853780244170069" datatype="html">
+        <source>Shell</source>
+        <note priority="1" from="description">Shell: A trait that snails have.\n{lb}{lb}Identical|Shell{rb}{rb}</note>
+        <note priority="1" from="meaning">Puzzle.animal4Trait1</note>
+      </trans-unit>
+      <trans-unit id="3470071553035745545" datatype="html">
+        <source>Cat</source>
+        <note priority="1" from="description">Cat: The animal.\n{lb}{lb}Identical|Cat{rb}{rb}</note>
+        <note priority="1" from="meaning">Puzzle.animal2</note>
+      </trans-unit>
+      <trans-unit id="3478101938294488773" datatype="html">
+        <source>You can fit more than one block inside a 'repeat' block.</source>
+        <note priority="1" from="description">callout - This is a hint that the user should place a second block inside of a a 'repeat' block.</note>
+        <note priority="1" from="meaning">Maze.helpRepeatMany</note>
+      </trans-unit>
+      <trans-unit id="3543744213961724053" datatype="html">
+        <source>Use this block to go in one heading if you have the worm, or a different heading if you don't have the worm.</source>
+        <note priority="1" from="description">callout - This is shown when the 'does not have worm' block is introduced.</note>
+        <note priority="1" from="meaning">Bird.helpHasWorm</note>
+      </trans-unit>
+      <trans-unit id="3595544601637178110" datatype="html">
+        <source>Swim forward. Specify a direction (0-360).</source>
+        <note priority="1" from="description">Tooltip for the block that allows players to move.</note>
+        <note priority="1" from="meaning">Pond.swimTooltip</note>
+      </trans-unit>
+      <trans-unit id="3603639777806135642" datatype="html">
+        <source>Complete the full tune of 'Frère Jacques'.</source>
+        <note priority="1" from="description">Instructions.</note>
+        <note priority="1" from="meaning">Music.helpText5</note>
+      </trans-unit>
+      <trans-unit id="3675417534208834552" datatype="html">
+        <source>Open the gallery of movies.</source>
+        <note priority="1" from="description">tooltip - Pressing this button opens a gallery of movies made by other users.</note>
+        <note priority="1" from="meaning">Movie.galleryTooltip</note>
+      </trans-unit>
+      <trans-unit id="3679919084850649919" datatype="html">
+        <source>Can you solve this complicated maze? Try following the left-hand wall. Advanced programmers only!</source>
+        <note priority="1" from="description">callout - This advises the user to solve a maze by keeping his/her left hand in contact with the wall while proceeding through it.  The final sentence is a warning that only advanced programmers should attempt this problem, as beginners tend to get frustrated.</note>
+        <note priority="1" from="meaning">Maze.helpWallFollow</note>
+      </trans-unit>
+      <trans-unit id="3714008464107588345" datatype="html">
+        <source>rectangle</source>
+        <note priority="1" from="description">Command to draw a rectangle.\n{lb}{lb}Identical|Rectangle{rb}{rb}</note>
+        <note priority="1" from="meaning">Movie.rectDraw</note>
+      </trans-unit>
+      <trans-unit id="3714515657442045855" datatype="html">
+        <source>Thank you for this program!  If our staff of trained monkeys like it, they will publish it to the gallery within a couple of days.</source>
+        <note priority="1" from="description">alert - After the user has submitted his/her program to the gallery, it must wait for approval.  Please make this message funny!</note>
+        <note priority="1" from="meaning">Games.submitted</note>
+      </trans-unit>
+      <trans-unit id="3730130313821215212" datatype="html">
+        <source>Pendulum</source>
+        <note priority="1" from="description">Name for a player that moves back and forth.\n{lb}{lb}Identical|Pendulum{rb}{rb}</note>
+        <note priority="1" from="meaning">Pond.pendulumName</note>
+      </trans-unit>
+      <trans-unit id="3779565506856485604" datatype="html">
+        <source>Returns the current time in the animation (0-100).</source>
+        <note priority="1" from="description">tooltip</note>
+        <note priority="1" from="meaning">Movie.timeTooltip</note>
+      </trans-unit>
+      <trans-unit id="3792533731296600003" datatype="html">
+        <source>italic</source>
+        <note priority="1" from="description">[[Translating:Blockly#Drop-Down_Menus dropdown]] - Specifies that a typographic font should be [https://en.wikipedia.org/wiki/Italics italic].</note>
+        <note priority="1" from="meaning">Turtle.fontItalic</note>
+      </trans-unit>
+      <trans-unit id="3794977698717555238" datatype="html">
+        <source>Feathers</source>
+        <note priority="1" from="description">Feathers: A trait that ducks have.\n{lb}{lb}Identical|Feather{rb}{rb}</note>
+        <note priority="1" from="meaning">Puzzle.animal1Trait1</note>
+      </trans-unit>
+      <trans-unit id="3833581138339630463" datatype="html">
+        <source>Pond Tutor</source>
+        <note priority="1" from="description">title - Specifies that this is Blockly's '''Pond Tutor''' game.  It is a series of lessons or practice levels to allow users to play the more advanced '''Pond''' game (in your language: '''{lb}{lb}:Blockly:Games.pond/{lb}{lb}RelevantLanguage{rb}{rb}{rb}{rb}''').</note>
+        <note priority="1" from="meaning">Games.pondTutor</note>
+      </trans-unit>
+      <trans-unit id="3856699002657821427" datatype="html">
+        <source>drum</source>
+        <note priority="1" from="description">Name of musical instrument.\n{lb}{lb}Identical|drum{rb}{rb}</note>
+        <note priority="1" from="meaning">Music.drum</note>
+      </trans-unit>
+      <trans-unit id="4016533017150562878" datatype="html">
+        <source>You have used up all the blocks for this level. To create a new block, you first need to delete an existing block.</source>
+        <note priority="1" from="description">callout - This is shown after the user has used all the blocks permitted on this level.</note>
+        <note priority="1" from="meaning">Maze.helpCapacity</note>
+      </trans-unit>
+      <trans-unit id="4040754079951245169" datatype="html">
+        <source>'x' is your current horizontal position. Use this block to go in one heading if 'x' is less than a number, or a different heading otherwise.</source>
+        <note priority="1" from="description">callout - This is shown when the 'x smaller than 50' block is introduced.</note>
+        <note priority="1" from="meaning">Bird.helpX</note>
+      </trans-unit>
+      <trans-unit id="4084870379162400287" datatype="html">
+        <source>Use simple shapes to draw this person.</source>
+        <note priority="1" from="description">Instructions.</note>
+        <note priority="1" from="meaning">Movie.helpText1</note>
+      </trans-unit>
+      <trans-unit id="4123080508175603514" datatype="html">
+        <source>Documentation</source>
+        <note priority="1" from="description">Text on the button that opens the language reference documentation.\n{lb}{lb}Identical|Documentation{rb}{rb}</note>
+        <note priority="1" from="meaning">Pond.documentation</note>
+      </trans-unit>
+      <trans-unit id="4130136547051161134" datatype="html">
+        <source>font</source>
+        <note priority="1" from="description">block text - This precedes a dropdown menu specifying the typographic font [family] that should be used when displaying text.\n{lb}{lb}Identical|Font{rb}{rb}</note>
+        <note priority="1" from="meaning">Turtle.font</note>
+      </trans-unit>
+      <trans-unit id="4138774728570944645" datatype="html">
+        <source>move forward</source>
+        <note priority="1" from="description">block text - Imperative or infinitive of a verb for a person moving (walking) in the direction he/she is facing.</note>
+        <note priority="1" from="meaning">Maze.moveForward</note>
+      </trans-unit>
+      <trans-unit id="4151476981960996687" datatype="html">
+        <source>Scared</source>
+        <note priority="1" from="description">Name for a player that is scared.\n{lb}{lb}Identical|Scared{rb}{rb}</note>
+        <note priority="1" from="meaning">Pond.scaredName</note>
+      </trans-unit>
+      <trans-unit id="4168357856145700694" datatype="html">
+        <source>Draw three yellow stars, and one white line.</source>
+        <note priority="1" from="description">Instructions.</note>
+        <note priority="1" from="meaning">Turtle.helpText6</note>
+      </trans-unit>
+      <trans-unit id="4197068989498547704" datatype="html">
+        <source>Are you ready for level %1?</source>
+        <note priority="1" from="description">alert - This is displayed when the user solves the level, inviting them to procede to the next level of difficulty.  %1 is an integer greater than 1.</note>
+        <note priority="1" from="meaning">Games.nextLevel</note>
+      </trans-unit>
+      <trans-unit id="4211607341272449380" datatype="html">
+        <source>Draw the star with just four blocks.</source>
+        <note priority="1" from="description">Dialog telling user to seek a simpler answer.</note>
+        <note priority="1" from="meaning">Turtle.helpUseLoop4</note>
+      </trans-unit>
+      <trans-unit id="4212209041492309817" datatype="html">
+        <source>Title:</source>
+        <note priority="1" from="description">Label in front of a field where the user is requested to type a title for their work.\n{lb}{lb}Identical|Title{rb}{rb}</note>
+        <note priority="1" from="meaning">Games.submitTitle</note>
+      </trans-unit>
+      <trans-unit id="4245983571766649655" datatype="html">
+        <source>width</source>
+        <note priority="1" from="description">Label for a rectangle or line's width input.\n{lb}{lb}Identical|Width{rb}{rb}</note>
+        <note priority="1" from="meaning">Movie.width</note>
+      </trans-unit>
+      <trans-unit id="4272389616881657314" datatype="html">
+        <source>Save and link to blocks.</source>
+        <note priority="1" from="description">tooltip - Pressing this button will cause the current program to be saved and for a URL to be shown to later retrieve it.</note>
+        <note priority="1" from="meaning">Games.linkTooltip</note>
+      </trans-unit>
+      <trans-unit id="4286873352447791201" datatype="html">
+        <source>Create a function to play the first four notes of 'Frère Jacques'. Run that function twice.  Don't add any new note blocks.</source>
+        <note priority="1" from="description">Instructions.</note>
+        <note priority="1" from="meaning">Music.helpText2b</note>
+      </trans-unit>
+      <trans-unit id="4294783477990312138" datatype="html">
+        <source>move backward by</source>
+        <note priority="1" from="description">[[Translating:Blockly#Drop-Down_Menus dropdown]] - Infinitive or imperative of a verb telling a turtle to move (walk) in the direction opposite to where he/she is facing.  This is followed by a number indicating how far (how many pixels) to go.  Prefer a translation that has text in common with the translation of 'move forward'.</note>
+        <note priority="1" from="meaning">Turtle.moveBackward</note>
+      </trans-unit>
+      <trans-unit id="4340252833994146197" datatype="html">
+        <source>text</source>
+        <note priority="1" from="description">variable name - Default [https://github.com/google/blockly/wiki/Variables variable] representing a [https://github.com/google/blockly/wiki/Text piece of text].  This should be a single word, preferably short.\n{lb}{lb}Identical|Text{rb}{rb}</note>
+        <note priority="1" from="meaning">Games.textVariable</note>
+      </trans-unit>
+      <trans-unit id="4362899193616566882" datatype="html">
+        <source>Stack a couple of 'move forward' blocks together to help me reach the goal.</source>
+        <note priority="1" from="description">callout - The word words for 'stack' and 'blocks' should be the same as for stacking children's blocks. Use the imperative verb form appropriate for speaking to a child, gender unspecified.  If no gender-neutral singular/familiar form exists but a gender-neutral plural/formal form exists, use that instead.  Be sure to use the same translation of 'move forward' as above.</note>
+        <note priority="1" from="meaning">Maze.helpStack</note>
+      </trans-unit>
+      <trans-unit id="4392335668231319812" datatype="html">
+        <source>Sets the font used by the print block.</source>
+        <note priority="1" from="description">tooltip - This is shown on the block that lets the user specify the font [family], size, and style that should be used for subsequent displays of text.</note>
+        <note priority="1" from="meaning">Turtle.fontTooltip</note>
+      </trans-unit>
+      <trans-unit id="4457752034960227220" datatype="html">
+        <source>This opponent is also too far away to use the cannon. But you are too weak to survive a collision. Swim towards the opponent while your horizontal location is less than than 50. Then 'stop' and use the cannon.</source>
+        <note priority="1" from="description">Instructions.  Do not translate the word 'stop'.</note>
+        <note priority="1" from="meaning">Pond.helpText5</note>
+      </trans-unit>
+      <trans-unit id="4502373380845009974" datatype="html">
+        <source>Turns the player left or right by 90 degrees.</source>
+        <note priority="1" from="description">tooltip - Turns the icon on the screen representing the player 90 degrees counter-clockwise (left) or clockwise (right).</note>
+        <note priority="1" from="meaning">Maze.turnTooltip</note>
+      </trans-unit>
+      <trans-unit id="4552185797583323905" datatype="html">
+        <source>Use the "See Gallery" button to see what other people have composed. If you compose something interesting, use the "Submit to Gallery" button to publish it.</source>
+        <note priority="1" from="description">Instructions on publishing your music.</note>
+        <note priority="1" from="meaning">Music.helpText10Reddit</note>
+      </trans-unit>
+      <trans-unit id="4570971685466979630" datatype="html">
+        <source>trumpet</source>
+        <note priority="1" from="description">Name of musical instrument.\n{lb}{lb}Identical|trumpet{rb}{rb}</note>
+        <note priority="1" from="meaning">Music.trumpet</note>
+      </trans-unit>
+      <trans-unit id="4573328115248294852" datatype="html">
+        <source>Your program didn't solve the maze. Press 'Reset' and try again.</source>
+        <note priority="1" from="description">callout - This is shown after the user has run a program that does not solve the maze.</note>
+        <note priority="1" from="meaning">Maze.helpReset</note>
+      </trans-unit>
+      <trans-unit id="4632196287172897579" datatype="html">
+        <source>guitar</source>
+        <note priority="1" from="description">Name of musical instrument.\n{lb}{lb}Identical|guitar{rb}{rb}</note>
+        <note priority="1" from="meaning">Music.guitar</note>
+      </trans-unit>
+      <trans-unit id="4634715858389563104" datatype="html">
+        <source>Moves the player forward one space.</source>
+        <note priority="1" from="description">tooltip - Moves the icon on the screen representing the player forward one square on the maze board.</note>
+        <note priority="1" from="meaning">Maze.moveForwardTooltip</note>
+      </trans-unit>
+      <trans-unit id="4707202199565787405" datatype="html">
+        <source>Lists</source>
+        <note priority="1" from="description">category - Blocks related to [https://github.com/google/blockly/wiki/Lists lists].\n{lb}{lb}Identical|List{rb}{rb}</note>
+        <note priority="1" from="meaning">Games.catLists</note>
+      </trans-unit>
+      <trans-unit id="4751586063015654997" datatype="html">
+        <source>Run your program to see what happens.</source>
+        <note priority="1" from="description">callout - This is shown after the user has created a program on the first level.</note>
+        <note priority="1" from="meaning">Maze.helpRun</note>
+      </trans-unit>
+      <trans-unit id="4833039242068195299" datatype="html">
+        <source>There's a new block that allows you to change the colour:</source>
+        <note priority="1" from="description">Introducing a new block.</note>
+        <note priority="1" from="meaning">Turtle.helpText3a</note>
+      </trans-unit>
+      <trans-unit id="4872332072586817805" datatype="html">
+        <source>Your solution works, but you can do better. Use 'scan' to tell the cannon how far to shoot.</source>
+        <note priority="1" from="description">Dialog telling user to seek a better answer.  Do not translate the word 'scan'.</note>
+        <note priority="1" from="meaning">Pond.helpUseScan</note>
+      </trans-unit>
+      <trans-unit id="4874525273235336318" datatype="html">
+        <source>If there is a path in the specified direction, then do some actions.</source>
+        <note priority="1" from="description">tooltip - 'path' refers to a path through a maze.</note>
+        <note priority="1" from="meaning">Maze.ifTooltip</note>
+      </trans-unit>
+      <trans-unit id="4881180422989969508" datatype="html">
+        <source>See Gallery</source>
+        <note priority="1" from="description">Label on a button that opens a gallery of movies made by other users.</note>
+        <note priority="1" from="meaning">Movie.galleryMsg</note>
+      </trans-unit>
+      <trans-unit id="4908896698701382039" datatype="html">
+        <source>More info...</source>
+        <note priority="1" from="description">Brief description of Blockly Games.\n{lb}{lb}Identical|More information{rb}{rb}</note>
+        <note priority="1" from="meaning">Index.moreInfo</note>
+      </trans-unit>
+      <trans-unit id="4916053588249741834" datatype="html">
+        <source>Create a program that draws a square.</source>
+        <note priority="1" from="description">Instructions.</note>
+        <note priority="1" from="meaning">Turtle.helpText1</note>
+      </trans-unit>
+      <trans-unit id="4936760056391284186" datatype="html">
+        <source>The mathematical formula for the arm is complicated. Here's the answer:</source>
+        <note priority="1" from="description">Instructions.</note>
+        <note priority="1" from="meaning">Movie.helpText5</note>
+      </trans-unit>
+      <trans-unit id="4999551220355901470" datatype="html">
+        <source>end y</source>
+        <note priority="1" from="description">Label for the y-coordinate of the end of a line.</note>
+        <note priority="1" from="meaning">Movie.y2</note>
+      </trans-unit>
+      <trans-unit id="5000330788075193694" datatype="html">
+        <source>repeat until</source>
+        <note priority="1" from="description">block text - Imperative or infinitive of a verb to repeat the following commands.  The phrase is followed by the symbol denoting the end of the maze.</note>
+        <note priority="1" from="meaning">Maze.repeatUntil</note>
+      </trans-unit>
+      <trans-unit id="5174223315558016597" datatype="html">
+        <source>One note (C4 is 7).</source>
+        <note priority="1" from="description">tooltip - Describes a musical note selector.  'C4' (also known as 'DO') is the note in the center of a piano keyboard and is represented as the number 7.</note>
+        <note priority="1" from="meaning">Music.pitchTooltip</note>
+      </trans-unit>
+      <trans-unit id="5191783594929469171" datatype="html">
+        <source>See Gallery</source>
+        <note priority="1" from="description">Label on a button that opens a gallery of drawings made by other users.</note>
+        <note priority="1" from="meaning">Turtle.galleryMsg</note>
+      </trans-unit>
+      <trans-unit id="5220656584398214966" datatype="html">
+        <source>Scan for enemies. Specify a direction (0-360). Returns the distance to the closest enemy in that direction. Returns Infinity if no enemy found.</source>
+        <note priority="1" from="description">Tooltip for the block that allows players to scan for enemies.</note>
+        <note priority="1" from="meaning">Pond.scanTooltip</note>
+      </trans-unit>
+      <trans-unit id="5222537568894189007" datatype="html">
+        <source>Returns the Y coordinate of the player (0 is the bottom edge, 100 is the top edge).</source>
+        <note priority="1" from="description">Tooltip for the block that reports the player's vertical location.</note>
+        <note priority="1" from="meaning">Pond.locYTooltip</note>
+      </trans-unit>
+      <trans-unit id="5287877014526685907" datatype="html">
+        <source>Could not load your saved file. Perhaps it was created with a different version of Blockly?</source>
+        <note priority="1" from="description">alert - There was a problem loading a file previously saved by the user.  The most likely reason for the problem is that it was created with an earlier, incompatible version of Blockly.  This message will be followed by technical information useful to engineers trying to understand the problem.</note>
+        <note priority="1" from="meaning">Games.xmlError</note>
+      </trans-unit>
+      <trans-unit id="5307089055470217701" datatype="html">
+        <source>You have %1 block left.</source>
+        <note priority="1" from="description">warning - Only one more block may be added. Please include '%1' in the translated string. It will be replaced with '1' and made bold.\n\nSee also:\n* {lb}{lb}msg-blockly|Maze.capacity2{rb}{rb}</note>
+        <note priority="1" from="meaning">Maze.capacity1</note>
+      </trans-unit>
+      <trans-unit id="5307840277183467457" datatype="html">
+        <source>You solved this level with 1 line of JavaScript:</source>
+        <note priority="1" from="description">alert - Displayed when a level is complete.</note>
+        <note priority="1" from="meaning">Games.linesOfCode1</note>
+      </trans-unit>
+      <trans-unit id="5355893896926183437" datatype="html">
+        <source>On this level, you need to stack together all of the blocks in the white workspace.</source>
+        <note priority="1" from="description">callout - This is displayed if a user attempts to run a program composed of multiple stacks of blocks, letting them know they need to create a single stack.</note>
+        <note priority="1" from="meaning">Maze.helpOneTopBlock</note>
+      </trans-unit>
+      <trans-unit id="5367389302003162125" datatype="html">
+        <source>Variables</source>
+        <note priority="1" from="description">category - Blocks related to [https://github.com/google/blockly/wiki/Variables variables].\n{lb}{lb}Identical|Variables{rb}{rb}</note>
+        <note priority="1" from="meaning">Games.catVariables</note>
+      </trans-unit>
+      <trans-unit id="5407183519779774573" datatype="html">
+        <source>legs:</source>
+        <note priority="1" from="description">Prompt for the number of legs that an animal has.\n{lb}{lb}Identical|Leg{rb}{rb}</note>
+        <note priority="1" from="meaning">Puzzle.legs</note>
+      </trans-unit>
+      <trans-unit id="5464017007607359776" datatype="html">
+        <source>flute</source>
+        <note priority="1" from="description">Name of musical instrument.\n{lb}{lb}Identical|flute{rb}{rb}</note>
+        <note priority="1" from="meaning">Music.flute</note>
+      </trans-unit>
+      <trans-unit id="5464369235708625567" datatype="html">
+        <source>Run Program</source>
+        <note priority="1" from="description">button label - Pressing this button runs the computer program the user has written.</note>
+        <note priority="1" from="meaning">Games.runProgram</note>
+      </trans-unit>
+      <trans-unit id="5509057833434715874" datatype="html">
+        <source>This level is extremely difficult. Would you like to skip it and go onto the next game? You can always come back later.</source>
+        <note priority="1" from="description">callout - This dialog gives the user the option to skip this level.</note>
+        <note priority="1" from="meaning">Games.helpAbort</note>
+      </trans-unit>
+      <trans-unit id="5539181822180691031" datatype="html">
+        <source>Run your program until it stops. Then you may submit your music to the gallery.</source>
+        <note priority="1" from="description">Error message.</note>
+        <note priority="1" from="meaning">Music.submitDisabled</note>
+      </trans-unit>
+      <trans-unit id="5561607146816569193" datatype="html">
+        <source>Draw a yellow star.</source>
+        <note priority="1" from="description">Instructions.</note>
+        <note priority="1" from="meaning">Turtle.helpText3b</note>
+      </trans-unit>
+      <trans-unit id="5608606240995218215" datatype="html">
+        <source>Snail</source>
+        <note priority="1" from="description">Snail: The animal.\n{lb}{lb}Identical|Snail{rb}{rb}</note>
+        <note priority="1" from="meaning">Puzzle.animal4</note>
+      </trans-unit>
+      <trans-unit id="5683520235628284499" datatype="html">
+        <source>Choose your favourite player from this menu.</source>
+        <note priority="1" from="description">callout - This is a hint that the user can change the appearance of the player that moves within the maze.</note>
+        <note priority="1" from="meaning">Maze.helpSkins</note>
+      </trans-unit>
+      <trans-unit id="5718696793880573329" datatype="html">
+        <source>https://en.wikipedia.org/wiki/Font</source>
+        <note priority="1" from="description">{lb}{lb}Optional{rb}{rb} URL - Information about typographic fonts.</note>
+        <note priority="1" from="meaning">Turtle.fontHelpUrl</note>
+      </trans-unit>
+      <trans-unit id="5755229178435676524" datatype="html">
+        <source>Sorry, '%1' doesn't correspond with any saved program.</source>
+        <note priority="1" from="description">alert - A request to retrieve a stored program does not have a valid URL. %1 is the invalid portion of the URL.</note>
+        <note priority="1" from="meaning">Games.hashError</note>
+      </trans-unit>
+      <trans-unit id="5768435196798212629" datatype="html">
+        <source>Use what you learned in the previous level to make legs that cross.</source>
+        <note priority="1" from="description">Instructions.</note>
+        <note priority="1" from="meaning">Movie.helpText4</note>
+      </trans-unit>
+      <trans-unit id="5771994620025805933" datatype="html">
+        <source>end x</source>
+        <note priority="1" from="description">Label for the x-coordinate of the end of a line.</note>
+        <note priority="1" from="meaning">Movie.x2</note>
+      </trans-unit>
+      <trans-unit id="5794689592834555935" datatype="html">
+        <source>does not have worm</source>
+        <note priority="1" from="description">block text - Bird is not in possession of a worm.  This phrase is prefixed with 'if'.</note>
+        <note priority="1" from="meaning">Bird.noWorm</note>
+      </trans-unit>
+      <trans-unit id="5866872255332532054" datatype="html">
+        <source>Draw an expanding circle behind the person.</source>
+        <note priority="1" from="description">Instructions.</note>
+        <note priority="1" from="meaning">Movie.helpText9</note>
+      </trans-unit>
+      <trans-unit id="5869746678245994303" datatype="html">
+        <source>Honey</source>
+        <note priority="1" from="description">Honey: A trait that bees have.\n{lb}{lb}Identical|Honey{rb}{rb}</note>
+        <note priority="1" from="meaning">Puzzle.animal3Trait1</note>
+      </trans-unit>
+      <trans-unit id="5894142643947508380" datatype="html">
+        <source>y</source>
+        <note priority="1" from="description">Label for a y-coordinate (vertical) input.</note>
+        <note priority="1" from="meaning">Movie.y</note>
+      </trans-unit>
+      <trans-unit id="5922351303839855212" datatype="html">
+        <source>do</source>
+        <note priority="1" from="description">block text - Imperative or infinitive of a verb preceding one or more commands to a person.  This is part of [https://github.com/google/blockly/wiki/Loops#repeat repeat] and [https://github.com/google/blockly/wiki/IfElse#If_blocks if] blocks.\n{lb}{lb}Identical|Do{rb}{rb}</note>
+        <note priority="1" from="meaning">Maze.doCode</note>
+      </trans-unit>
+      <trans-unit id="5999435247596889390" datatype="html">
+        <source>Draw a small yellow star, then draw a line above it.</source>
+        <note priority="1" from="description">Instructions.</note>
+        <note priority="1" from="meaning">Turtle.helpText4b</note>
+      </trans-unit>
+      <trans-unit id="6014527610997525213" datatype="html">
+        <source>For each animal (green), attach its picture, choose its number of legs, and make a stack of its traits.</source>
+        <note priority="1" from="description">Instructions for the puzzle.  For context, see [https://blockly-games.appspot.com/puzzle Blockly Puzzle].</note>
+        <note priority="1" from="meaning">Puzzle.helpText</note>
+      </trans-unit>
+      <trans-unit id="6072728260550347194" datatype="html">
+        <source>x</source>
+        <note priority="1" from="description">Label for an x-coordinate (horizontal) input.</note>
+        <note priority="1" from="meaning">Movie.x</note>
+      </trans-unit>
+      <trans-unit id="6078028329780496695" datatype="html">
+        <source>turn left by</source>
+        <note priority="1" from="description">[[Translating:Blockly#Drop-Down_Menus dropdown]] - Infinitive or imperative of verb telling a turtle to rotate counter-clockwise (anti-clockwise).  This is followed by a number indicating how far (how many degrees) to turn.  Prefer a translation that has text in common with the translation of 'turn right by'.</note>
+        <note priority="1" from="meaning">Turtle.turnLeft</note>
+      </trans-unit>
+      <trans-unit id="6082253890512898845" datatype="html">
+        <source>turn left</source>
+        <note priority="1" from="description">[[Translating:Blockly#Drop-Down_Menus dropdown]] - Imperative or infinitive of a verb for a person turning his head and body one quarter rotation counter-clockwise.  Prefer a translation that has text in common with the translation of 'turn right'.  See [[Translating:Blockly#Drop-Down_Menus]].</note>
+        <note priority="1" from="meaning">Maze.turnLeft</note>
+      </trans-unit>
+      <trans-unit id="6143510286024124175" datatype="html">
+        <source>when %1 clicked</source>
+        <note priority="1" from="description">The program associated with this label is executed when a button is clicked.  %1 is image of the play icon on the button.</note>
+        <note priority="1" from="meaning">Music.start</note>
+      </trans-unit>
+      <trans-unit id="6150116638989639252" datatype="html">
+        <source>rest %1</source>
+        <note priority="1" from="description">Plays no music for a duration specified.  %1 is the duration (whole, quarter, ...).</note>
+        <note priority="1" from="meaning">Music.rest</note>
+      </trans-unit>
+      <trans-unit id="6175401358049603739" datatype="html">
+        <source>If there is a path in the specified direction, then do the first block of actions. Otherwise, do the second block of actions.</source>
+        <note priority="1" from="description">tooltip - 'path' refers to a path through a maze.</note>
+        <note priority="1" from="meaning">Maze.ifelseTooltip</note>
+      </trans-unit>
+      <trans-unit id="6192195229721218364" datatype="html">
+        <source>Draws text in the turtle's direction at its location.</source>
+        <note priority="1" from="description">tooltip - Note that 'print' refers to displaying text on the screen, not on an external printer.</note>
+        <note priority="1" from="meaning">Turtle.printTooltip</note>
+      </trans-unit>
+      <trans-unit id="6230928628295719065" datatype="html">
+        <source>https://en.wikipedia.org/wiki/Cat</source>
+        <note priority="1" from="description">The URL of a page with basic information about cats.</note>
+        <note priority="1" from="meaning">Puzzle.animal2HelpUrl</note>
+      </trans-unit>
+      <trans-unit id="6246818619115581781" datatype="html">
+        <source>Run your program until it stops. Then you may submit your drawing to the gallery.</source>
+        <note priority="1" from="description">Error message.</note>
+        <note priority="1" from="meaning">Turtle.submitDisabled</note>
+      </trans-unit>
+      <trans-unit id="6303588441484075499" datatype="html">
+        <source>Returns the player's current health (0 is dead, 100 is healthy).</source>
+        <note priority="1" from="description">Tooltip for the block that reports the player's health.</note>
+        <note priority="1" from="meaning">Pond.healthTooltip</note>
+      </trans-unit>
+      <trans-unit id="6395102814842545595" datatype="html">
+        <source>This opponent is too far away to use the cannon (which has a limit of 70 meters). Instead, use the 'swim' command to start swimming towards the opponent and crash into it.</source>
+        <note priority="1" from="description">Instructions.  Do not translate the word 'swim'.</note>
+        <note priority="1" from="meaning">Pond.helpText4</note>
+      </trans-unit>
+      <trans-unit id="6456907015338240672" datatype="html">
+        <source>Share your blocks with this link:\n\n%1</source>
+        <note priority="1" from="description">alert - After the user has pressed a button to save his/her program, this provides the URL (%1) to retrieve the program.  The characters '\n\n' indicate that a blank line will be displayed before the URL (in English).  Leave those in unless you move %1 to the beginning or middle of the text, in which case you should use your judgment about where blank lines would be most useful.\n\nParameters:\n* %1 - URL of saved program.</note>
+        <note priority="1" from="meaning">Games.linkAlert</note>
+      </trans-unit>
+      <trans-unit id="6464574658303727797" datatype="html">
+        <source>piano</source>
+        <note priority="1" from="description">Name of musical instrument.\n{lb}{lb}Identical|piano{rb}{rb}</note>
+        <note priority="1" from="meaning">Music.piano</note>
+      </trans-unit>
+      <trans-unit id="6543464286497146566" datatype="html">
+        <source>Gallery</source>
+        <note priority="1" from="description">Display of art created by user's programs.\n{lb}{lb}Identical|Gallery{rb}{rb}</note>
+        <note priority="1" from="meaning">Gallery</note>
+      </trans-unit>
+      <trans-unit id="6637086536416292952" datatype="html">
+        <source>Click the icon to modify the 'if' block.</source>
+        <note priority="1" from="description">callout - This is shown when the user first needs to modify an 'if' block.</note>
+        <note priority="1" from="meaning">Bird.helpElse</note>
+      </trans-unit>
+      <trans-unit id="6642460592854928417" datatype="html">
+        <source>start x</source>
+        <note priority="1" from="description">Label for the x-coordinate of the start of a line.</note>
+        <note priority="1" from="meaning">Movie.x1</note>
+      </trans-unit>
+      <trans-unit id="6668207685173746387" datatype="html">
+        <source>An 'if' block will do something only if the condition is true. Try turning left if there is a path to the left.</source>
+        <note priority="1" from="description">callout - This is shown when the 'if' block is introduced.  An example of an 'if' block is: 'if there is a path to the left, turn left'.</note>
+        <note priority="1" from="meaning">Maze.helpIf</note>
+      </trans-unit>
+      <trans-unit id="6743524605815726714" datatype="html">
+        <source>Waits for one whole note.</source>
+        <note priority="1" from="description">tooltip</note>
+        <note priority="1" from="meaning">Music.restWholeTooltip</note>
+      </trans-unit>
+      <trans-unit id="6758619824185404746" datatype="html">
+        <source>This opponent will move away when it is hit. Swim towards it if it is out of range (70 meters).</source>
+        <note priority="1" from="description">Instructions.</note>
+        <note priority="1" from="meaning">Pond.helpText6</note>
+      </trans-unit>
+      <trans-unit id="6793476563803963571" datatype="html">
+        <source>Draw anything you want. You've got a huge number of new blocks you can explore. Have fun!</source>
+        <note priority="1" from="description">Instructions.</note>
+        <note priority="1" from="meaning">Turtle.helpText10</note>
+      </trans-unit>
+      <trans-unit id="6825293024892668360" datatype="html">
+        <source>Draw the stars, then draw four white lines.</source>
+        <note priority="1" from="description">Instructions.</note>
+        <note priority="1" from="meaning">Turtle.helpText7</note>
+      </trans-unit>
+      <trans-unit id="6841274917154697792" datatype="html">
+        <source>violin</source>
+        <note priority="1" from="description">Name of musical instrument.\n{lb}{lb}Identical|violin{rb}{rb}</note>
+        <note priority="1" from="meaning">Music.violin</note>
+      </trans-unit>
+      <trans-unit id="6861186860202069901" datatype="html">
+        <source>Rook</source>
+        <note priority="1" from="description">Name for a player that behaves like a rook (castle) in chess.\n{lb}{lb}Identical|Rook{rb}{rb}</note>
+        <note priority="1" from="meaning">Pond.rookName</note>
+      </trans-unit>
+      <trans-unit id="6889946611851664425" datatype="html">
+        <source>turn right by</source>
+        <note priority="1" from="description">[[Translating:Blockly#Drop-Down_Menus dropdown]] - Infinitive or imperative of verb telling a turtle to rotate clockwise.  This is followed by a number indicating how far (how many degrees) to turn.  Prefer a translation that has text in common with the translation of 'turn left by'.</note>
+        <note priority="1" from="meaning">Turtle.turnRight</note>
+      </trans-unit>
+      <trans-unit id="6896230882346401824" datatype="html">
+        <source>Drag an 'else' block into the 'if' block.</source>
+        <note priority="1" from="description">callout - This is shown to demonstrate how to drag a block.\n\nTranslate consistently with:\n* {lb}{lb}msg-blockly|CONTROLS IF MSG ELSE{rb}{rb}\n* {lb}{lb}msg-blockly|CONTROLS IF MSG IF{rb}{rb}</note>
+        <note priority="1" from="meaning">Bird.helpMutator</note>
+      </trans-unit>
+      <trans-unit id="6914672331358629968" datatype="html">
+        <source>Stop swimming. Player will slow to a stop.</source>
+        <note priority="1" from="description">Tooltip for the block that allows players to stop.</note>
+        <note priority="1" from="meaning">Pond.stopTooltip</note>
+      </trans-unit>
+      <trans-unit id="6958318060789777550" datatype="html">
+        <source>Make a movie of anything you want. You've got a huge number of new blocks you can explore. Have fun!</source>
+        <note priority="1" from="description">Instructions.</note>
+        <note priority="1" from="meaning">Movie.helpText10</note>
+      </trans-unit>
+      <trans-unit id="7027756430810063268" datatype="html">
+        <source>Draw the shape with just three blocks.</source>
+        <note priority="1" from="description">Dialog telling user to seek a simpler answer.</note>
+        <note priority="1" from="meaning">Turtle.helpUseLoop3</note>
+      </trans-unit>
+      <trans-unit id="7037786213766848558" datatype="html">
+        <source>Blockly Games</source>
+        <note priority="1" from="description">The project name.</note>
+        <note priority="1" from="meaning">Games.name</note>
+      </trans-unit>
+      <trans-unit id="7068270386450979574" datatype="html">
+        <source>x and y mark the bird's position. When x = 0 the bird is near the left edge, when x = 100 it's near the right edge. When y = 0 the bird is at the bottom, when y = 100 it's at the top.</source>
+        <note priority="1" from="description">tooltip - (x, y) marks the coordinate of bird, (0, 0) is the bottom left corner and (100, 100) top right.</note>
+        <note priority="1" from="meaning">Bird.positionTooltip</note>
+      </trans-unit>
+      <trans-unit id="7070128001410938826" datatype="html">
+        <source>Beak</source>
+        <note priority="1" from="description">Beak: A trait that ducks have.\n{lb}{lb}Identical|Beak{rb}{rb}</note>
+        <note priority="1" from="meaning">Puzzle.animal1Trait2</note>
+      </trans-unit>
+      <trans-unit id="7089740218907481322" datatype="html">
+        <source>Turns the turtle left or right by the specified number of degrees.</source>
+        <note priority="1" from="description">'Left' means counter-clockwise/anti-clockwise, and 'right' means clockwise.</note>
+        <note priority="1" from="meaning">Turtle.turnTooltip</note>
+      </trans-unit>
+      <trans-unit id="7188061504659183367" datatype="html">
+        <source>Returns the X coordinate of the player (0 is the left edge, 100 is the right edge).</source>
+        <note priority="1" from="description">Tooltip for the block that reports the player's horizontal location.</note>
+        <note priority="1" from="meaning">Pond.locXTooltip</note>
+      </trans-unit>
+      <trans-unit id="7264063713014053084" datatype="html">
+        <source>%1 blocks are incorrect.</source>
+        <note priority="1" from="description">An error message displayed if the user misplaced multiple blocks.\n\nParameters:\n* %1 - number of blocks incorrectly placed, which is always greater than 1 (or the message Puzzle.error1 would be used).</note>
+        <note priority="1" from="meaning">Puzzle.error2</note>
+      </trans-unit>
+      <trans-unit id="7327913532655152334" datatype="html">
+        <source>Colour</source>
+        <note priority="1" from="description">category - Blocks related to [https://github.com/google/blockly/wiki/Colour colour].\n{lb}{lb}Identical|Color{rb}{rb}</note>
+        <note priority="1" from="meaning">Games.catColour</note>
+      </trans-unit>
+      <trans-unit id="7356438874462563937" datatype="html">
+        <source>This new block adds a silent delay.</source>
+        <note priority="1" from="description">Introducing a new block: a musical rest.</note>
+        <note priority="1" from="meaning">Music.helpText7a</note>
+      </trans-unit>
+      <trans-unit id="7404435315115664673" datatype="html">
+        <source>Run the program you wrote.</source>
+        <note priority="1" from="description">tooltip - Pressing this button runs the computer program the user has written.</note>
+        <note priority="1" from="meaning">Games.runTooltip</note>
+      </trans-unit>
+      <trans-unit id="7416117358889101130" datatype="html">
+        <source>OK</source>
+        <note priority="1" from="description">button label - Pressing this button closes help information.\n{lb}{lb}Identical|OK{rb}{rb}</note>
+        <note priority="1" from="meaning">Games.dialogOk</note>
+      </trans-unit>
+      <trans-unit id="7448819884522815447" datatype="html">
+        <source>Changes the colour of the pen.</source>
+        <note priority="1" from="description">tooltip - Changes the colour of ink in the pen carried by the turtle.</note>
+        <note priority="1" from="meaning">Movie.colourTooltip</note>
+      </trans-unit>
+      <trans-unit id="7484626604785566128" datatype="html">
+        <source>Puzzle</source>
+        <note priority="1" from="description">title - Specifies that this is Blockly's '''Puzzle''' game.  Use the word for a jigsaw puzzle.\n{lb}{lb}Identical|Puzzle{rb}{rb}</note>
+        <note priority="1" from="meaning">Games.puzzle</note>
+      </trans-unit>
+      <trans-unit id="7512355766258181728" datatype="html">
+        <source>Whiskers</source>
+        <note priority="1" from="description">Whiskers: A trait that cats have.\n{lb}{lb}Identical|Whisker{rb}{rb}</note>
+        <note priority="1" from="meaning">Puzzle.animal2Trait1</note>
+      </trans-unit>
+      <trans-unit id="7626795853222454941" datatype="html">
+        <source>This range is exactly what the 'cannon' command needs to fire accurately.</source>
+        <note priority="1" from="description">Instructions.  Do not translate 'cannon'.</note>
+        <note priority="1" from="meaning">Pond.helpText3b</note>
+      </trans-unit>
+      <trans-unit id="7631062511117780922" datatype="html">
+        <source>Submit to Gallery</source>
+        <note priority="1" from="description">Label on a button that submits the user's art to a public gallery.</note>
+        <note priority="1" from="meaning">Music.submitMsg</note>
+      </trans-unit>
+      <trans-unit id="7710842474668852368" datatype="html">
+        <source>picture:</source>
+        <note priority="1" from="description">Prompt for a picture of an animal.\n{lb}{lb}Identical|Picture{rb}{rb}</note>
+        <note priority="1" from="meaning">Puzzle.picture</note>
+      </trans-unit>
+      <trans-unit id="7726741685578327869" datatype="html">
+        <source>Delete all your solutions?</source>
+        <note priority="1" from="description">Confirmation prompt for deleting all the user's data.</note>
+        <note priority="1" from="meaning">Index.clear</note>
+      </trans-unit>
+      <trans-unit id="7801404419489956886" datatype="html">
+        <source>Submit your music to the gallery.</source>
+        <note priority="1" from="description">tooltip - Pressing this button causes the music created by the user's program to be submitted to a gallery for other people to see.</note>
+        <note priority="1" from="meaning">Music.submitTooltip</note>
+      </trans-unit>
+      <trans-unit id="7834355790379776267" datatype="html">
+        <source>There was a problem with the request.</source>
+        <note priority="1" from="description">alert - The URL is invalid or a server error occurred.  This message will be followed by technical information useful to engineers trying to understand the problem.</note>
+        <note priority="1" from="meaning">Games.httpRequestError</note>
+      </trans-unit>
+      <trans-unit id="7922752443358054817" datatype="html">
+        <source>Makes the turtle (circle and arrow) visible or invisible.</source>
+        <note priority="1" from="description">tooltip</note>
+        <note priority="1" from="meaning">Turtle.turtleVisibilityTooltip</note>
+      </trans-unit>
+      <trans-unit id="7977008118225488696" datatype="html">
+        <source>The music will sound better if you use a different instrument in each start block.</source>
+        <note priority="1" from="description">Dialog telling user not to use only one musical instrument (piano, flute, etc).</note>
+        <note priority="1" from="meaning">Music.helpUseInstruments</note>
+      </trans-unit>
+      <trans-unit id="7989045751017922850" datatype="html">
+        <source>Create a second start block that has two delay blocks, then also plays 'Frère Jacques'.</source>
+        <note priority="1" from="description">Instructions.</note>
+        <note priority="1" from="meaning">Music.helpText7b</note>
+      </trans-unit>
+      <trans-unit id="8039840332068856511" datatype="html">
+        <source>Stinger</source>
+        <note priority="1" from="description">Stinger: A trait that bees have.\n{lb}{lb}Identical|Stinger{rb}{rb}</note>
+        <note priority="1" from="meaning">Puzzle.animal3Trait2</note>
+      </trans-unit>
+      <trans-unit id="8126100101233789051" datatype="html">
+        <source>Compose anything you want. You've got a huge number of new blocks you can explore. Have fun!</source>
+        <note priority="1" from="description">Instructions.</note>
+        <note priority="1" from="meaning">Music.helpText10</note>
+      </trans-unit>
+      <trans-unit id="8146210747284231786" datatype="html">
+        <source>set instrument to %1</source>
+        <note priority="1" from="description">Sets to an instrument to play music.  %1 is type of the instrument (guitar, piano, ...).</note>
+        <note priority="1" from="meaning">Music.setInstrument</note>
+      </trans-unit>
+      <trans-unit id="8148375971169689544" datatype="html">
+        <source>Fire the cannon. Specify a direction (0-360) and a range (0-70).</source>
+        <note priority="1" from="description">Tooltip for the block that allows players to shoot at other players.</note>
+        <note priority="1" from="meaning">Pond.cannonTooltip</note>
+      </trans-unit>
+      <trans-unit id="8185961826099739990" datatype="html">
+        <source>Use the 'if' block to draw a small head for the first half of the movie. Then draw a big head for the second half of the movie.</source>
+        <note priority="1" from="description">Instructions.  Do translate the word 'if'.</note>
+        <note priority="1" from="meaning">Movie.helpText7</note>
+      </trans-unit>
+      <trans-unit id="8275067544147149670" datatype="html">
+        <source>Drawing 360 white lines will look like the full moon.</source>
+        <note priority="1" from="description">Instructions.</note>
+        <note priority="1" from="meaning">Turtle.helpText8</note>
+      </trans-unit>
+      <trans-unit id="8285442700503222776" datatype="html">
+        <source>This level needs both an 'else if' and an 'else' block.</source>
+        <note priority="1" from="description">callout - This is shown when the user first needs to modify an 'if' block to have an 'else if' and an 'else'.\n\nMake sure to translate consistently with:\n* {lb}{lb}msg-blockly|CONTROLS IF MSG ELSEIF{rb}{rb}\n* {lb}{lb}msg-blockly|CONTROLS IF MSG ELSE{rb}{rb}</note>
+        <note priority="1" from="meaning">Bird.helpElseIf</note>
+      </trans-unit>
+      <trans-unit id="8370361588013530358" datatype="html">
+        <source>Reach the end of this path using only two blocks. Use 'repeat' to run a block more than once.</source>
+        <note priority="1" from="description">callout - This is shown when the 'repeat' block is introduced.  The word 'path' refers to a path through a maze, and 'block' refers to a child's building block.</note>
+        <note priority="1" from="meaning">Maze.helpRepeat</note>
+      </trans-unit>
+      <trans-unit id="8453803544352763294" datatype="html">
+        <source>Almost! One block is incorrect.</source>
+        <note priority="1" from="description">An encouraging error message displayed if the user placed all blocks except 1 correctly.\n\nIf the number of incorrect blocks is 2 or more, Puzzle.error2 is used instead.</note>
+        <note priority="1" from="meaning">Puzzle.error1</note>
+      </trans-unit>
+      <trans-unit id="8470792861618868667" datatype="html">
+        <source>set width to</source>
+        <note priority="1" from="description">block text - Infinitive or imperative of a verb to set the width of the lines that should be drawn in the future by an imaginary pen.  This is followed by a number indicating the width in pixels (1 or greater).</note>
+        <note priority="1" from="meaning">Turtle.setWidth</note>
+      </trans-unit>
+      <trans-unit id="8496210457380227143" datatype="html">
+        <source>if path to the right</source>
+        <note priority="1" from="description">[[Translating:Blockly#Drop-Down_Menus dropdown]] - Condensed form of 'if there is a path to the right', as in: 'if path to the right, turn right'.</note>
+        <note priority="1" from="meaning">Maze.pathRight</note>
+      </trans-unit>
+      <trans-unit id="8501578350336555138" datatype="html">
+        <source>Pond</source>
+        <note priority="1" from="description">title - Specifies that this is Blockly's '''Pond''' game.\n{lb}{lb}Identical|Pond{rb}{rb}</note>
+        <note priority="1" from="meaning">Games.pond</note>
+      </trans-unit>
+      <trans-unit id="8593267208200988531" datatype="html">
+        <source>Submit to Gallery</source>
+        <note priority="1" from="description">Label on a button that submits the user's movie to a public gallery.</note>
+        <note priority="1" from="meaning">Movie.submitMsg</note>
+      </trans-unit>
+      <trans-unit id="8598935855828958714" datatype="html">
+        <source>show turtle</source>
+        <note priority="1" from="description">block text - Infinitive or imperative of a verb telling a turtle to show itself (become visible after having been invisible).</note>
+        <note priority="1" from="meaning">Turtle.showTurtle</note>
+      </trans-unit>
+      <trans-unit id="8660854177819810615" datatype="html">
+        <source>Text</source>
+        <note priority="1" from="description">category - Blocks related to [https://github.com/google/blockly/wiki/Text text processing].\n{lb}{lb}Identical|Text{rb}{rb}</note>
+        <note priority="1" from="meaning">Games.catText</note>
+      </trans-unit>
+      <trans-unit id="8678021904034212986" datatype="html">
+        <source>If-else blocks will do one thing or the other.</source>
+        <note priority="1" from="description">callout - This is shown when the 'if-else' block is introduced.  For 'if-else' concatenate the words for 'if' and 'else/otherwise'.</note>
+        <note priority="1" from="meaning">Maze.helpIfElse</note>
+      </trans-unit>
+      <trans-unit id="8702063433119367086" datatype="html">
+        <source>This new block lets you change to another instrument.</source>
+        <note priority="1" from="description">Introducing a new block that changes musical instruments.</note>
+        <note priority="1" from="meaning">Music.helpText6a</note>
+      </trans-unit>
+      <trans-unit id="8755460901437343901" datatype="html">
+        <source>print</source>
+        <note priority="1" from="description">block text - Infinitive or imperative of a verb telling a turtle to display text on the screen.  This is always followed by a block indicating what should be printed.\n{lb}{lb}Identical|Print{rb}{rb}</note>
+        <note priority="1" from="meaning">Turtle.print</note>
+      </trans-unit>
+      <trans-unit id="8787968467443938994" datatype="html">
+        <source>Want to start over?</source>
+        <note priority="1" from="description">Label next to button for deleting all the user's data.</note>
+        <note priority="1" from="meaning">Index.startOver</note>
+      </trans-unit>
+      <trans-unit id="8834261967730878795" datatype="html">
+        <source>There's a new block that allows you to lift your pen off the paper when you move:</source>
+        <note priority="1" from="description">Introducing a new block.\n\nCross-reference to ensure consistent terminology:\n* {lb}{lb}msg-blockly|Turtle.penTooltip{rb}{rb}</note>
+        <note priority="1" from="meaning">Turtle.helpText4a</note>
+      </trans-unit>
+      <trans-unit id="8857967060654747458" datatype="html">
+        <source>Executes the blocks inside when the 'Run Program' button is clicked.</source>
+        <note priority="1" from="description">tooltip</note>
+        <note priority="1" from="meaning">Music.startTooltip</note>
+      </trans-unit>
+      <trans-unit id="8892669298049897836" datatype="html">
+        <source>Use the "See Gallery" button to see movies that other people have made. If you make an interesting movie, use the "Submit to Gallery" button to publish it.</source>
+        <note priority="1" from="description">Instructions on publishing your movie.</note>
+        <note priority="1" from="meaning">Movie.helpText10Reddit</note>
+      </trans-unit>
+      <trans-unit id="8900931063490704792" datatype="html">
+        <source>The condition when the bird has not gotten the worm.</source>
+        <note priority="1" from="description">tooltip - The bird wants to get the worm.</note>
+        <note priority="1" from="meaning">Bird.noWormTooltip</note>
+      </trans-unit>
+      <trans-unit id="8902797929631099229" datatype="html">
+        <source>This level is a movie. You want the person's arm to move across the screen. Press the play button to see a preview.</source>
+        <note priority="1" from="description">Instructions.  The play button looks like the video play button on YouTube.</note>
+        <note priority="1" from="meaning">Movie.helpText2a</note>
+      </trans-unit>
+      <trans-unit id="8948280862093710040" datatype="html">
+        <source>Counter</source>
+        <note priority="1" from="description">Name for a player that counts methodically.\n{lb}{lb}Identical|Counter{rb}{rb}</note>
+        <note priority="1" from="meaning">Pond.counterName</note>
+      </trans-unit>
+      <trans-unit id="8978780845435771093" datatype="html">
+        <source>This opponent moves back and forth, making it hard to hit. The 'scan' expression returns the exact range to the opponent in the specified direction.</source>
+        <note priority="1" from="description">Instructions.  Do not translate 'scan'.</note>
+        <note priority="1" from="meaning">Pond.helpText3a</note>
+      </trans-unit>
+      <trans-unit id="8983835283796130303" datatype="html">
+        <source>set colour to</source>
+        <note priority="1" from="description">block text - Infinitive or imperative of a verb to specify the colour of the lines that should be drawn in the future by an imaginary pen.  This is followed by a block showing the colour</note>
+        <note priority="1" from="meaning">Turtle.setColour</note>
+      </trans-unit>
+      <trans-unit id="9137982570247930589" datatype="html">
+        <source>else</source>
+        <note priority="1" from="description">block text - Conjunction meaning 'otherwise', introducing commands to be performed if a previous condition was not true, as in 'if x&gt;3, do this, else do that'.  See [https://github.com/google/blockly/wiki/IfElse#If-Else_blocks].\n{lb}{lb}Identical|Else{rb}{rb}</note>
+        <note priority="1" from="meaning">Maze.elseCode</note>
+      </trans-unit>
+      <trans-unit id="9149339265247850099" datatype="html">
+        <source>Music</source>
+        <note priority="1" from="description">title - Specifies that this is Blockly's '''Music''' game.\n{lb}{lb}Identical|Music{rb}{rb}</note>
+        <note priority="1" from="meaning">Games.music</note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
