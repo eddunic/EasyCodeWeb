@@ -36,7 +36,7 @@
   <p>&rarr; <a href="https://developers.google.com/blockly/guides/configure-blockly/web/running-javascript#js_interpreter">More info on running code with JS Interpreter</a></p>-->
 
   <p>
-    <button onclick="stepCode()" id="stepButton">Step JavaScript</button>
+    <button onclick="stepCode()" id="stepButton">Próximo bloco JavaScript</button>
   </p>
 
   <div style="width: 100%">
@@ -187,7 +187,7 @@
       highlightPause = false;
 
       if (clearOutput) {
-        outputArea.value = 'Program output:\n=================';
+        outputArea.value = 'Saída do programa:\n=================';
       }
     }
 
@@ -209,7 +209,7 @@
         // And then show generated code in an alert.
         // In a timeout to allow the outputArea.value to reset first.
         setTimeout(function() {
-          alert('Ready to execute the following code\n' +
+          alert('Pronto para executar o código a seguir\n' +
             '===================================\n' + latestCode);
           highlightPause = true;
           stepCode();
@@ -223,7 +223,7 @@
         } finally {
           if (!hasMoreCode) {
             // Program complete, no more code to execute.
-            outputArea.value += '\n\n<< Program complete >>';
+            outputArea.value += '\n\n<< Programa completo >>';
 
             myInterpreter = null;
             resetStepUi(false);
